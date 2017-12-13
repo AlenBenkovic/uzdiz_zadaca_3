@@ -9,6 +9,7 @@ import uzdiz_zadaca_3.composite.FoiZgrada;
 import uzdiz_zadaca_3.factory.FoiFactory;
 import uzdiz_zadaca_3.factory.MjestoFactory;
 import uzdiz_zadaca_3.logs.FoiLogger;
+import uzdiz_zadaca_3.mvc.ToFview;
 import uzdiz_zadaca_3.utils.Params;
 
 /**
@@ -30,7 +31,13 @@ public class ToF {
         private final FoiZgrada foiZgrada = new FoiZgrada();
 
         public Builder() {
-            this.logger.init(Params.params.get("-i").toString(), Integer.parseInt(Params.params.get("-brl").toString()));
+            // this.logger.init(Params.params.get("-i").toString(), Integer.parseInt(Params.params.get("-brl").toString()));
+        }
+        
+        public Builder inicijalizirajSucelje(){
+            ToFview view = new ToFview();
+                       
+            return this;
         }
 
         public Builder kreirajMjesta() {

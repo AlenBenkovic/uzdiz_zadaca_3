@@ -20,13 +20,14 @@ public class Uzdiz_zadaca_3 {
     public static void main(String[] args) {
         if (Params.checkArgs(args)) {
             ToF tof = new ToF.Builder()
+                    .inicijalizirajSucelje()
                     /*.kreirajMjesta()
                     .postaviUredjaje()
                     .inicijalizacija()
                     .opremanjeMjesta()*/
                     .build();
             
-            tof.radiProvjere();
+            //tof.radiProvjere();
             
         } else {
             System.out.println("Parametri nisu ispravni!");

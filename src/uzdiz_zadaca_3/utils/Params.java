@@ -81,7 +81,8 @@ public class Params {
             status = (params.containsKey("-m")
                     && params.containsKey("-s")
                     && params.containsKey("-a")
-                    && params.containsKey("-r"));
+                    && params.containsKey("-r")
+                    && params.containsKey("-alg"));
 
             System.out.println(Collections.singletonList(params));
 
@@ -125,6 +126,14 @@ public class Params {
                 pattern = Pattern.compile("\\d*");
                 matcher = pattern.matcher(value);
                 status = matcher.matches();
+                break;
+            case "-alg":
+                try {
+                    Class.forName(value);
+                    status = true;
+                } catch (ClassNotFoundException e) {
+                    status = false;
+                }
                 break;
                 
         }
