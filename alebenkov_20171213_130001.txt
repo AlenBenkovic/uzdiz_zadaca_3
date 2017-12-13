@@ -1,0 +1,4136 @@
+13.12.2017. 01:00:01 - [INFO] - Kreiram mjesto FOI 1 - ulazna vrata .
+13.12.2017. 01:00:01 - [INFO] - Kreiram mjesto FOI 1 - dvorišna vrata .
+13.12.2017. 01:00:01 - [WARNING] - Mjesto FOI 1 - dvorišna vrata već postoji.
+13.12.2017. 01:00:01 - [INFO] - Kreiram mjesto FOI 1 - parkiralište .
+13.12.2017. 01:00:01 - [INFO] - Kreiram mjesto FOI 1 - vijećnica .
+13.12.2017. 01:00:01 - [INFO] - Kreiram mjesto FOI 1 - knjižnica .
+13.12.2017. 01:00:01 - [WARNING] - Format zapisa za mjesto FOI 1 - knjižnica2 nije valjan.
+13.12.2017. 01:00:01 - [INFO] - Kreiram mjesto FOI 1 - dvorana 1 .
+13.12.2017. 01:00:01 - [INFO] - Kreiram mjesto FOI 1 - restoran .
+13.12.2017. 01:00:01 - [INFO] - Kreiram mjesto FOI 1 - sistem sala .
+13.12.2017. 01:00:01 - [WARNING] - Format zapisa za smjer vjetra nije valjan.
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Postavljam uredjaje za FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - [Senzor] unutarnja temperatura
+13.12.2017. 01:00:01 - [INFO] - [Senzor] kontakt
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] paljenje/gašenje lampe
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Postavljam uredjaje za FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - [Senzor] prepreka
+13.12.2017. 01:00:01 - [INFO] - [Senzor] dim
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] paljenje/gašenje lampe
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Postavljam uredjaje za FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - [Senzor] kontakt
+13.12.2017. 01:00:01 - [INFO] - [Senzor] vlaga
+13.12.2017. 01:00:01 - [INFO] - [Senzor] vlaga
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] paljenje/gašenje lampe
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Postavljam uredjaje za FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - [Senzor] kontakt
+13.12.2017. 01:00:01 - [INFO] - [Senzor] prepreka
+13.12.2017. 01:00:01 - [INFO] - [Senzor] unutarnja temperatura
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] otvaranje/zatvaranje vrata
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Postavljam uredjaje za FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - [Senzor] prepreka
+13.12.2017. 01:00:01 - [INFO] - [Senzor] vlaga
+13.12.2017. 01:00:01 - [INFO] - [Senzor] svjetlo
+13.12.2017. 01:00:01 - [INFO] - [Senzor] svjetlo
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] paljenje/gašenje lampe
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Postavljam uredjaje za FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - [Senzor] prepreka
+13.12.2017. 01:00:01 - [INFO] - [Senzor] unutarnja temperatura
+13.12.2017. 01:00:01 - [INFO] - [Senzor] dim
+13.12.2017. 01:00:01 - [INFO] - [Senzor] vlaga
+13.12.2017. 01:00:01 - [INFO] - [Senzor] prepreka
+13.12.2017. 01:00:01 - [INFO] - [Senzor] prepreka
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] otvaranje/zatvaranje vrata
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] paljenje/gašenje lampe
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Postavljam uredjaje za FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - [Senzor] dim
+13.12.2017. 01:00:01 - [INFO] - [Senzor] prepreka
+13.12.2017. 01:00:01 - [INFO] - [Senzor] prepreka
+13.12.2017. 01:00:01 - [INFO] - [Senzor] vlaga
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] otvaranje/zatvaranje vrata
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] otvaranje/zatvaranje vrata
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Postavljam uredjaje za FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - [Senzor] dim
+13.12.2017. 01:00:01 - [INFO] - [Senzor] dim
+13.12.2017. 01:00:01 - [INFO] - [Senzor] svjetlo
+13.12.2017. 01:00:01 - [INFO] - [Senzor] kontakt
+13.12.2017. 01:00:01 - [INFO] - [Senzor] dim
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] otvaranje/zatvaranje vrata
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] dizanje/spuštanje platna za ploču
+13.12.2017. 01:00:01 - [INFO] - [Aktuator] paljenje/gašenje lampe
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Inicijaliziram uredjaje za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - dim [1]
+13.12.2017. 01:00:01 - [INFO] - dim [1]
+13.12.2017. 01:00:01 - [INFO] - svjetlo [1]
+13.12.2017. 01:00:01 - [INFO] - kontakt [1]
+13.12.2017. 01:00:01 - [INFO] - dim [1]
+13.12.2017. 01:00:01 - [INFO] - otvaranje/zatvaranje vrata [1]
+13.12.2017. 01:00:01 - [INFO] - dizanje/spuštanje platna za ploču [1]
+13.12.2017. 01:00:01 - [INFO] - paljenje/gašenje lampe [1]
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Inicijaliziram uredjaje za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [WARNING] - prepreka [0]
+13.12.2017. 01:00:01 - [WARNING] - dim [0]
+13.12.2017. 01:00:01 - [INFO] - paljenje/gašenje lampe [1]
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Inicijaliziram uredjaje za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - kontakt [1]
+13.12.2017. 01:00:01 - [INFO] - vlaga [1]
+13.12.2017. 01:00:01 - [INFO] - vlaga [1]
+13.12.2017. 01:00:01 - [INFO] - paljenje/gašenje lampe [1]
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Inicijaliziram uredjaje za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - prepreka [1]
+13.12.2017. 01:00:01 - [INFO] - unutarnja temperatura [1]
+13.12.2017. 01:00:01 - [WARNING] - dim [0]
+13.12.2017. 01:00:01 - [INFO] - vlaga [1]
+13.12.2017. 01:00:01 - [INFO] - prepreka [1]
+13.12.2017. 01:00:01 - [INFO] - prepreka [1]
+13.12.2017. 01:00:01 - [WARNING] - dizanje/spuštanje televizora [0]
+13.12.2017. 01:00:01 - [INFO] - otvaranje/zatvaranje vrata [1]
+13.12.2017. 01:00:01 - [INFO] - paljenje/gašenje lampe [1]
+13.12.2017. 01:00:01 - [INFO] - dizanje/spuštanje televizora [1]
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Inicijaliziram uredjaje za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - kontakt [1]
+13.12.2017. 01:00:01 - [INFO] - prepreka [1]
+13.12.2017. 01:00:01 - [INFO] - unutarnja temperatura [1]
+13.12.2017. 01:00:01 - [INFO] - dizanje/spuštanje televizora [1]
+13.12.2017. 01:00:01 - [INFO] - dizanje/spuštanje televizora [1]
+13.12.2017. 01:00:01 - [WARNING] - otvaranje/zatvaranje vrata [0]
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Inicijaliziram uredjaje za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - unutarnja temperatura [1]
+13.12.2017. 01:00:01 - [INFO] - kontakt [1]
+13.12.2017. 01:00:01 - [WARNING] - paljenje/gašenje lampe [0]
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Inicijaliziram uredjaje za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - prepreka [1]
+13.12.2017. 01:00:01 - [INFO] - vlaga [1]
+13.12.2017. 01:00:01 - [INFO] - svjetlo [1]
+13.12.2017. 01:00:01 - [INFO] - svjetlo [1]
+13.12.2017. 01:00:01 - [WARNING] - paljenje/gašenje lampe [0]
+13.12.2017. 01:00:01 - [INFO] - dizanje/spuštanje televizora [1]
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Inicijaliziram uredjaje za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - dim [1]
+13.12.2017. 01:00:01 - [INFO] - prepreka [1]
+13.12.2017. 01:00:01 - [INFO] - prepreka [1]
+13.12.2017. 01:00:01 - [WARNING] - vlaga [0]
+13.12.2017. 01:00:01 - [INFO] - otvaranje/zatvaranje vrata [1]
+13.12.2017. 01:00:01 - [WARNING] - otvaranje/zatvaranje vrata [0]
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Opremam mjesto 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 231 dim pridruzen je aktuatorima:  
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 701 dim pridruzen je aktuatorima:  
+>413 paljenje/gašenje lampe
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 863 svjetlo pridruzen je aktuatorima:  
+>373 otvaranje/zatvaranje vrata
+>382 dizanje/spuštanje platna za ploču
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 314 kontakt pridruzen je aktuatorima:  
+>373 otvaranje/zatvaranje vrata
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 196 dim pridruzen je aktuatorima:  
+>382 dizanje/spuštanje platna za ploču
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Aktuator] 373 otvaranje/zatvaranje vrata pridruzeni su senzori:  
+>314 kontakt
+>863 svjetlo
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Aktuator] 382 dizanje/spuštanje platna za ploču pridruzeni su senzori:  
+>863 svjetlo
+>196 dim
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Aktuator] 413 paljenje/gašenje lampe pridruzeni su senzori:  
+>701 dim
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Opremam mjesto 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Aktuator] 343 paljenje/gašenje lampe pridruzeni su senzori:  
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Opremam mjesto 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 410 kontakt pridruzen je aktuatorima:  
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 618 vlaga pridruzen je aktuatorima:  
+>285 paljenje/gašenje lampe
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 152 vlaga pridruzen je aktuatorima:  
+>285 paljenje/gašenje lampe
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Aktuator] 285 paljenje/gašenje lampe pridruzeni su senzori:  
+>152 vlaga
+>618 vlaga
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Opremam mjesto 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 268 prepreka pridruzen je aktuatorima:  
+>407 dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 990 unutarnja temperatura pridruzen je aktuatorima:  
+>315 otvaranje/zatvaranje vrata
+>164 paljenje/gašenje lampe
+>407 dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 345 vlaga pridruzen je aktuatorima:  
+>315 otvaranje/zatvaranje vrata
+>164 paljenje/gašenje lampe
+>407 dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 219 prepreka pridruzen je aktuatorima:  
+>164 paljenje/gašenje lampe
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 919 prepreka pridruzen je aktuatorima:  
+>315 otvaranje/zatvaranje vrata
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Aktuator] 315 otvaranje/zatvaranje vrata pridruzeni su senzori:  
+>990 unutarnja temperatura
+>345 vlaga
+>919 prepreka
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Aktuator] 164 paljenje/gašenje lampe pridruzeni su senzori:  
+>345 vlaga
+>990 unutarnja temperatura
+>219 prepreka
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Aktuator] 407 dizanje/spuštanje televizora pridruzeni su senzori:  
+>345 vlaga
+>268 prepreka
+>990 unutarnja temperatura
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Opremam mjesto 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 531 kontakt pridruzen je aktuatorima:  
+>403 dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 244 prepreka pridruzen je aktuatorima:  
+>834 dizanje/spuštanje televizora
+>403 dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 351 unutarnja temperatura pridruzen je aktuatorima:  
+>403 dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Aktuator] 834 dizanje/spuštanje televizora pridruzeni su senzori:  
+>244 prepreka
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Aktuator] 403 dizanje/spuštanje televizora pridruzeni su senzori:  
+>531 kontakt
+>351 unutarnja temperatura
+>244 prepreka
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Opremam mjesto 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 418 unutarnja temperatura pridruzen je aktuatorima:  
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 793 kontakt pridruzen je aktuatorima:  
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Opremam mjesto 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 461 prepreka pridruzen je aktuatorima:  
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 651 vlaga pridruzen je aktuatorima:  
+>955 dizanje/spuštanje televizora
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 207 svjetlo pridruzen je aktuatorima:  
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Senzor] 60 svjetlo pridruzen je aktuatorima:  
+13.12.2017. 01:00:01 - [INFO] - 
+-----------
+[Aktuator] 955 dizanje/spuštanje televizora pridruzeni su senzori:  
+>651 vlaga
+13.12.2017. 01:00:01 - [INFO] - 
+-------------------------------------------------------------
+	Opremam mjesto 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+[Senzor] 907 dim pridruzen je aktuatorima:  
+>235 otvaranje/zatvaranje vrata
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+[Senzor] 240 prepreka pridruzen je aktuatorima:  
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+[Senzor] 326 prepreka pridruzen je aktuatorima:  
+>235 otvaranje/zatvaranje vrata
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+[Aktuator] 235 otvaranje/zatvaranje vrata pridruzeni su senzori:  
+>907 dim
+>326 prepreka
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 196 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 231 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [WARNING] - 
+-----------
+Uredjaj: 314 kontakt
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 373 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 382 dizanje/spuštanje platna za ploču
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 93
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 413 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 701 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 863 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 343 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 152 vlaga
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 86
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 285 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 410 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:10 - [WARNING] - 
+-----------
+Uredjaj: 618 vlaga
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:00:10 - [WARNING] - 
+-----------
+Uredjaj: 164 paljenje/gašenje lampe
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 219 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 268 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 315 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 345 vlaga
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 83
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 407 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 73
+13.12.2017. 01:00:10 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 89
+----------
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 919 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 990 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 26.0
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 244 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 351 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 24.3
+13.12.2017. 01:00:10 - [WARNING] - 
+-----------
+Uredjaj: 403 dizanje/spuštanje televizora
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 531 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 834 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 19
+13.12.2017. 01:00:10 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 83
+----------
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 418 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 39.6
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 793 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 60 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 207 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 461 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 651 vlaga
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 34
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 955 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 54
+13.12.2017. 01:00:10 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 79
+----------
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 235 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 240 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [WARNING] - 
+-----------
+Uredjaj: 326 prepreka
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:10 - [INFO] - 
+-----------
+Uredjaj: 907 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+Uredjaj dim (da/da) 100%
+Uredjaj dim (da/da) 100%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj dizanje/spuštanje platna za ploču (93/200) 46%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj dim (da/da) 100%
+Uredjaj svjetlo (da/da) 100%
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+Uredjaj vlaga (86/100) 86%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj vlaga (5/100) 5%
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj vlaga (83/100) 83%
+Uredjaj dizanje/spuštanje televizora (89/100) 89%
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (26.0/40.0) 64%
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (24.3/40.0) 60%
+Uredjaj dizanje/spuštanje televizora (92/100) 92%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj dizanje/spuštanje televizora (83/100) 83%
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+Uredjaj unutarnja temperatura (39.6/40.0) 99%
+Uredjaj kontakt (ne/da) 0%
+13.12.2017. 01:00:10 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+Uredjaj svjetlo (ne/da) 0%
+Uredjaj svjetlo (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj vlaga (34/100) 34%
+Uredjaj dizanje/spuštanje televizora (79/100) 79%
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj dim (da/da) 100%
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 196 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [WARNING] - 
+-----------
+Uredjaj: 231 dim
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 314 kontakt
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 373 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 382 dizanje/spuštanje platna za ploču
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 2
+13.12.2017. 01:00:19 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 82
+----------
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 413 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 701 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 863 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 343 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 152 vlaga
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 19
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 285 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 410 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 618 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 58
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 164 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 219 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:19 - [WARNING] - 
+-----------
+Uredjaj: 268 prepreka
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 315 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 345 vlaga
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 43
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 407 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 20
+13.12.2017. 01:00:19 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 79
+----------
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 919 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:19 - [WARNING] - 
+-----------
+Uredjaj: 990 unutarnja temperatura
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 244 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 351 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 9.4
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 403 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 29
+13.12.2017. 01:00:19 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 46
+----------
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 531 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 834 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 62
+13.12.2017. 01:00:19 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 97
+----------
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 418 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 39.4
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 793 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 60 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 207 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 461 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 651 vlaga
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 57
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 955 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 24
+13.12.2017. 01:00:19 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 88
+----------
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 235 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 240 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 326 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:00:19 - [INFO] - 
+-----------
+Uredjaj: 907 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+Uredjaj dim (ne/da) 0%
+Uredjaj dim (ne/da) 0%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj dizanje/spuštanje platna za ploču (82/200) 41%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj dim (ne/da) 0%
+Uredjaj svjetlo (ne/da) 0%
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+Uredjaj vlaga (19/100) 19%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj vlaga (58/100) 58%
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj vlaga (43/100) 43%
+Uredjaj dizanje/spuštanje televizora (79/100) 79%
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (37.0/40.0) 92%
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (9.4/40.0) 23%
+Uredjaj dizanje/spuštanje televizora (46/100) 46%
+Uredjaj kontakt (da/da) 100%
+Uredjaj dizanje/spuštanje televizora (97/100) 97%
+13.12.2017. 01:00:19 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+Uredjaj unutarnja temperatura (39.4/40.0) 98%
+Uredjaj kontakt (da/da) 100%
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+Uredjaj svjetlo (ne/da) 0%
+Uredjaj svjetlo (ne/da) 0%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj vlaga (57/100) 57%
+Uredjaj dizanje/spuštanje televizora (88/100) 88%
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj dim (da/da) 100%
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 196 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 231 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 314 kontakt
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 373 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:28 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 382 dizanje/spuštanje platna za ploču
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 185
+13.12.2017. 01:00:28 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 193
+----------
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 413 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 701 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 863 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:28 - [WARNING] - 
+-----------
+Uredjaj: 343 paljenje/gašenje lampe
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:00:28 - [WARNING] - 
+-----------
+Uredjaj: 152 vlaga
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 285 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 410 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 618 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 64
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 164 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:28 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 219 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 268 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 315 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:28 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 345 vlaga
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 41
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 407 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 26
+13.12.2017. 01:00:28 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 84
+----------
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 919 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 990 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 27.5
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 244 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 351 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 9.1
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 403 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 69
+13.12.2017. 01:00:28 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 76
+----------
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 531 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 834 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 37
+13.12.2017. 01:00:28 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 39
+----------
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 418 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 23.4
+13.12.2017. 01:00:28 - [WARNING] - 
+-----------
+Uredjaj: 793 kontakt
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 60 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 207 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 461 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 651 vlaga
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 4
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 955 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 86
+13.12.2017. 01:00:28 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 89
+----------
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 235 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:28 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 240 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:28 - [INFO] - 
+-----------
+Uredjaj: 326 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:28 - [WARNING] - 
+-----------
+Uredjaj: 907 dim
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+Uredjaj dim (da/da) 100%
+Uredjaj dim (ne/da) 0%
+Uredjaj kontakt (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj dizanje/spuštanje platna za ploču (193/200) 96%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj dim (da/da) 100%
+Uredjaj svjetlo (ne/da) 0%
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+Uredjaj vlaga (18/100) 18%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj kontakt (da/da) 100%
+Uredjaj vlaga (64/100) 64%
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj vlaga (41/100) 41%
+Uredjaj dizanje/spuštanje televizora (84/100) 84%
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (27.5/40.0) 68%
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+Uredjaj prepreka (ne/da) 0%
+Uredjaj unutarnja temperatura (9.1/40.0) 22%
+Uredjaj dizanje/spuštanje televizora (76/100) 76%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj dizanje/spuštanje televizora (39/100) 39%
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+Uredjaj unutarnja temperatura (23.4/40.0) 58%
+Uredjaj kontakt (da/da) 100%
+13.12.2017. 01:00:28 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+Uredjaj svjetlo (da/da) 100%
+Uredjaj svjetlo (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj vlaga (4/100) 4%
+Uredjaj dizanje/spuštanje televizora (89/100) 89%
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj dim (da/da) 100%
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 196 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 231 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 314 kontakt
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 373 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:37 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 382 dizanje/spuštanje platna za ploču
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 20
+13.12.2017. 01:00:37 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 79
+----------
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 413 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 701 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 863 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 343 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 152 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 12
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 285 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 410 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 618 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 56
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:00:37 - [WARNING] - 
+-----------
+Uredjaj: 164 paljenje/gašenje lampe
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 219 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [WARNING] - 
+-----------
+Uredjaj: 268 prepreka
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 315 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 345 vlaga
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 88
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 407 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 28
+13.12.2017. 01:00:37 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 49
+----------
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 919 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 990 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 4.1
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 244 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 351 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 7.3
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 403 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 8
+13.12.2017. 01:00:37 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 91
+----------
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 531 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [WARNING] - 
+-----------
+Uredjaj: 834 dizanje/spuštanje televizora
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 418 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 18.5
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 793 kontakt
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 60 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 207 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 461 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 651 vlaga
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 5
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 955 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 69
+13.12.2017. 01:00:37 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 85
+----------
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 235 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:37 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 240 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:37 - [WARNING] - 
+-----------
+Uredjaj: 326 prepreka
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:00:37 - [INFO] - 
+-----------
+Uredjaj: 907 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+Uredjaj dim (da/da) 100%
+Uredjaj dim (ne/da) 0%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj dizanje/spuštanje platna za ploču (79/200) 39%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj dim (ne/da) 0%
+Uredjaj svjetlo (ne/da) 0%
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+Uredjaj vlaga (12/100) 12%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj kontakt (da/da) 100%
+Uredjaj vlaga (56/100) 56%
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj vlaga (88/100) 88%
+Uredjaj dizanje/spuštanje televizora (49/100) 49%
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (4.1/40.0) 10%
+13.12.2017. 01:00:37 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+Uredjaj prepreka (ne/da) 0%
+Uredjaj unutarnja temperatura (7.3/40.0) 18%
+Uredjaj dizanje/spuštanje televizora (91/100) 91%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj dizanje/spuštanje televizora (77/100) 77%
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+Uredjaj unutarnja temperatura (18.5/40.0) 46%
+Uredjaj kontakt (da/da) 100%
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+Uredjaj svjetlo (ne/da) 0%
+Uredjaj svjetlo (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj vlaga (5/100) 5%
+Uredjaj dizanje/spuštanje televizora (85/100) 85%
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj dim (da/da) 100%
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 196 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 231 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 314 kontakt
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:00:46 - [WARNING] - 
+-----------
+Uredjaj: 373 otvaranje/zatvaranje vrata
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:46 - [WARNING] - 
+-----------
+Uredjaj: 382 dizanje/spuštanje platna za ploču
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 413 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:46 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 701 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 863 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 343 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 152 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 71
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 285 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 410 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 618 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 65
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:00:46 - [WARNING] - 
+-----------
+Uredjaj: 164 paljenje/gašenje lampe
+Status: 0 (neuspjesne provjere: 3)
+Vrijednost: nepoznato
+13.12.2017. 01:00:46 - [WARNING] - Radim zamjenu uredjaja
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 268 prepreka
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 315 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:46 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 345 vlaga
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 12
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 407 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 73
+13.12.2017. 01:00:46 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 88
+----------
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 919 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 990 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 10.7
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 431 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 244 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 351 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 38.6
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 403 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 99
+13.12.2017. 01:00:46 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 99
+----------
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 531 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 834 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 70
+13.12.2017. 01:00:46 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 71
+----------
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 418 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 29.5
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 793 kontakt
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 60 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 207 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 461 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:46 - [WARNING] - 
+-----------
+Uredjaj: 651 vlaga
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 955 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 83
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 235 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 240 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 326 prepreka
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:00:46 - [INFO] - 
+-----------
+Uredjaj: 907 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+Uredjaj dim (ne/da) 0%
+Uredjaj dim (ne/da) 0%
+Uredjaj kontakt (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj dizanje/spuštanje platna za ploču (7/200) 3%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj dim (ne/da) 0%
+Uredjaj svjetlo (ne/da) 0%
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+Uredjaj vlaga (71/100) 71%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj vlaga (65/100) 65%
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+Uredjaj prepreka (ne/da) 0%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj vlaga (12/100) 12%
+Uredjaj dizanje/spuštanje televizora (88/100) 88%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj unutarnja temperatura (10.7/40.0) 26%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+13.12.2017. 01:00:46 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (38.6/40.0) 96%
+Uredjaj dizanje/spuštanje televizora (99/100) 99%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj dizanje/spuštanje televizora (71/100) 71%
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+Uredjaj unutarnja temperatura (29.5/40.0) 73%
+Uredjaj kontakt (ne/da) 0%
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+Uredjaj svjetlo (da/da) 100%
+Uredjaj svjetlo (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj vlaga (83/100) 83%
+Uredjaj dizanje/spuštanje televizora (83/100) 83%
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj dim (da/da) 100%
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:00:55 - [WARNING] - 
+-----------
+Uredjaj: 196 dim
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 231 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 314 kontakt
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 373 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 382 dizanje/spuštanje platna za ploču
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 173
+13.12.2017. 01:00:55 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 177
+----------
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 413 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 701 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 863 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 343 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 152 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 30
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 285 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 410 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 618 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 87
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:00:55 - [WARNING] - 
+-----------
+Uredjaj: 219 prepreka
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 268 prepreka
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 315 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:55 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:55 - [WARNING] - 
+-----------
+Uredjaj: 345 vlaga
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 407 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 14
+13.12.2017. 01:00:55 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 53
+----------
+13.12.2017. 01:00:55 - [WARNING] - 
+-----------
+Uredjaj: 431 paljenje/gašenje lampe
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 919 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 990 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 10.3
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 244 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:55 - [WARNING] - 
+-----------
+Uredjaj: 351 unutarnja temperatura
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 403 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 55
+13.12.2017. 01:00:55 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 75
+----------
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 531 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 834 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 77
+13.12.2017. 01:00:55 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 84
+----------
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 418 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 38.1
+13.12.2017. 01:00:55 - [WARNING] - 
+-----------
+Uredjaj: 793 kontakt
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 60 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 207 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 461 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 651 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 15
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 955 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 99
+13.12.2017. 01:00:55 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 99
+----------
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 235 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:00:55 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 240 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 326 prepreka
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+-----------
+Uredjaj: 907 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+Uredjaj dim (da/da) 100%
+Uredjaj dim (ne/da) 0%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj dizanje/spuštanje platna za ploču (177/200) 88%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj dim (ne/da) 0%
+Uredjaj svjetlo (ne/da) 0%
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+Uredjaj vlaga (30/100) 30%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj vlaga (87/100) 87%
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+Uredjaj prepreka (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj vlaga (99/100) 99%
+Uredjaj dizanje/spuštanje televizora (53/100) 53%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (10.3/40.0) 25%
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+Uredjaj prepreka (ne/da) 0%
+Uredjaj unutarnja temperatura (34.9/40.0) 87%
+Uredjaj dizanje/spuštanje televizora (75/100) 75%
+Uredjaj kontakt (da/da) 100%
+Uredjaj dizanje/spuštanje televizora (84/100) 84%
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+Uredjaj unutarnja temperatura (38.1/40.0) 95%
+Uredjaj kontakt (da/da) 100%
+13.12.2017. 01:00:55 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+Uredjaj svjetlo (ne/da) 0%
+Uredjaj svjetlo (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj vlaga (15/100) 15%
+Uredjaj dizanje/spuštanje televizora (99/100) 99%
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj dim (da/da) 100%
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 196 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 231 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:04 - [WARNING] - 
+-----------
+Uredjaj: 314 kontakt
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 373 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:04 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 382 dizanje/spuštanje platna za ploču
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 134
+13.12.2017. 01:01:04 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 179
+----------
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 413 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:04 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 701 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 863 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 343 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 152 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 1
+13.12.2017. 01:01:04 - [WARNING] - 
+-----------
+Uredjaj: 285 paljenje/gašenje lampe
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 410 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 618 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 72
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 219 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:04 - [WARNING] - 
+-----------
+Uredjaj: 268 prepreka
+Status: 0 (neuspjesne provjere: 3)
+Vrijednost: nepoznato
+13.12.2017. 01:01:04 - [WARNING] - Radim zamjenu uredjaja
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 345 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 38
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 407 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 70
+13.12.2017. 01:01:04 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 93
+----------
+13.12.2017. 01:01:04 - [WARNING] - 
+-----------
+Uredjaj: 431 paljenje/gašenje lampe
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 919 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 990 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 27.8
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 985 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 244 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 351 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 29.9
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 403 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 23
+13.12.2017. 01:01:04 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 88
+----------
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 531 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 834 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 9
+13.12.2017. 01:01:04 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 47
+----------
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 418 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 21.6
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 793 kontakt
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: da
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 60 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 207 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 461 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 651 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 83
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 955 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 85
+13.12.2017. 01:01:04 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 98
+----------
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:01:04 - [WARNING] - 
+-----------
+Uredjaj: 235 otvaranje/zatvaranje vrata
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 240 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:04 - [INFO] - 
+-----------
+Uredjaj: 326 prepreka
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: da
+13.12.2017. 01:01:04 - [WARNING] - 
+-----------
+Uredjaj: 907 dim
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+Uredjaj dim (ne/da) 0%
+Uredjaj dim (da/da) 100%
+Uredjaj kontakt (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj dizanje/spuštanje platna za ploču (179/200) 89%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj dim (ne/da) 0%
+Uredjaj svjetlo (ne/da) 0%
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+Uredjaj vlaga (1/100) 1%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj vlaga (72/100) 72%
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+Uredjaj prepreka (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj vlaga (38/100) 38%
+Uredjaj dizanje/spuštanje televizora (93/100) 93%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj unutarnja temperatura (27.8/40.0) 69%
+Uredjaj prepreka (ne/da) 0%
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (29.9/40.0) 74%
+Uredjaj dizanje/spuštanje televizora (88/100) 88%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj dizanje/spuštanje televizora (47/100) 47%
+13.12.2017. 01:01:04 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+Uredjaj unutarnja temperatura (21.6/40.0) 54%
+Uredjaj kontakt (da/da) 100%
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+Uredjaj svjetlo (ne/da) 0%
+Uredjaj svjetlo (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj vlaga (83/100) 83%
+Uredjaj dizanje/spuštanje televizora (98/100) 98%
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj dim (da/da) 100%
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 196 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 231 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 314 kontakt
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 373 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:13 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 382 dizanje/spuštanje platna za ploču
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 156
+13.12.2017. 01:01:13 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 158
+----------
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 413 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:13 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 701 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 863 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 343 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 152 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 71
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 285 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 410 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 618 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 1
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 219 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 315 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:13 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 345 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 62
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 407 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 94
+13.12.2017. 01:01:13 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 96
+----------
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 431 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 919 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 985 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 990 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 22.4
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 244 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 351 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 25.8
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 403 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 45
+13.12.2017. 01:01:13 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 93
+----------
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 531 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:13 - [WARNING] - 
+-----------
+Uredjaj: 834 dizanje/spuštanje televizora
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:01:13 - [WARNING] - 
+-----------
+Uredjaj: 418 unutarnja temperatura
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 793 kontakt
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 60 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 207 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 461 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 651 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 59
+13.12.2017. 01:01:13 - [WARNING] - 
+-----------
+Uredjaj: 955 dizanje/spuštanje televizora
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 235 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:13 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:01:13 - [WARNING] - 
+-----------
+Uredjaj: 240 prepreka
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 326 prepreka
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: da
+13.12.2017. 01:01:13 - [INFO] - 
+-----------
+Uredjaj: 907 dim
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+Uredjaj dim (da/da) 100%
+Uredjaj dim (ne/da) 0%
+Uredjaj kontakt (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj dizanje/spuštanje platna za ploču (158/200) 79%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj dim (da/da) 100%
+Uredjaj svjetlo (ne/da) 0%
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+Uredjaj vlaga (71/100) 71%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj vlaga (1/100) 1%
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+Uredjaj prepreka (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj vlaga (62/100) 62%
+Uredjaj dizanje/spuštanje televizora (96/100) 96%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (22.4/40.0) 55%
+13.12.2017. 01:01:13 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (25.8/40.0) 64%
+Uredjaj dizanje/spuštanje televizora (93/100) 93%
+Uredjaj kontakt (da/da) 100%
+Uredjaj dizanje/spuštanje televizora (97/100) 97%
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+Uredjaj unutarnja temperatura (34.7/40.0) 86%
+Uredjaj kontakt (ne/da) 0%
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+Uredjaj svjetlo (ne/da) 0%
+Uredjaj svjetlo (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj vlaga (59/100) 59%
+Uredjaj dizanje/spuštanje televizora (25/100) 25%
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj dim (ne/da) 0%
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 196 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 231 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 314 kontakt
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 373 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 382 dizanje/spuštanje platna za ploču
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 69
+13.12.2017. 01:01:22 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 182
+----------
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 413 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:22 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 701 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [WARNING] - 
+-----------
+Uredjaj: 863 svjetlo
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 343 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 152 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 42
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 285 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 410 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:22 - [WARNING] - 
+-----------
+Uredjaj: 618 vlaga
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 219 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 315 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 345 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 97
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 407 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 36
+13.12.2017. 01:01:22 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 53
+----------
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 431 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 919 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 985 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 990 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 32.0
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 244 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 351 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 32.8
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 403 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 93
+13.12.2017. 01:01:22 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 93
+----------
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 531 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 834 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: 84
+13.12.2017. 01:01:22 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 94
+----------
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 418 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 24.9
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 793 kontakt
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: da
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 60 svjetlo
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:22 - [WARNING] - 
+-----------
+Uredjaj: 207 svjetlo
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:01:22 - [WARNING] - 
+-----------
+Uredjaj: 461 prepreka
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 651 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 96
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 955 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 33
+13.12.2017. 01:01:22 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 47
+----------
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 235 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:22 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 240 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 326 prepreka
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+-----------
+Uredjaj: 907 dim
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+Uredjaj dim (da/da) 100%
+Uredjaj dim (da/da) 100%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj dizanje/spuštanje platna za ploču (182/200) 91%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj dim (ne/da) 0%
+Uredjaj svjetlo (ne/da) 0%
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+Uredjaj vlaga (42/100) 42%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj kontakt (da/da) 100%
+Uredjaj vlaga (17/100) 17%
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+Uredjaj prepreka (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj vlaga (97/100) 97%
+Uredjaj dizanje/spuštanje televizora (53/100) 53%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj unutarnja temperatura (32.0/40.0) 80%
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+Uredjaj prepreka (ne/da) 0%
+Uredjaj unutarnja temperatura (32.8/40.0) 82%
+Uredjaj dizanje/spuštanje televizora (93/100) 93%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj dizanje/spuštanje televizora (94/100) 94%
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+Uredjaj unutarnja temperatura (24.9/40.0) 62%
+Uredjaj kontakt (da/da) 100%
+13.12.2017. 01:01:22 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+Uredjaj svjetlo (da/da) 100%
+Uredjaj svjetlo (ne/da) 0%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj vlaga (96/100) 96%
+Uredjaj dizanje/spuštanje televizora (47/100) 47%
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj dim (ne/da) 0%
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:01:31 - [WARNING] - 
+-----------
+Uredjaj: 196 dim
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 231 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:31 - [WARNING] - 
+-----------
+Uredjaj: 314 kontakt
+Status: 0 (neuspjesne provjere: 3)
+Vrijednost: nepoznato
+13.12.2017. 01:01:31 - [WARNING] - Radim zamjenu uredjaja
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 382 dizanje/spuštanje platna za ploču
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 176
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 413 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:31 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 701 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 863 svjetlo
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 339 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 343 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 152 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 49
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 285 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:31 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 410 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 618 vlaga
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: 20
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 219 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 315 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:31 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:01:31 - [WARNING] - 
+-----------
+Uredjaj: 345 vlaga
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 407 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 23
+13.12.2017. 01:01:31 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 44
+----------
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 431 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: da
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 919 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 985 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:31 - [WARNING] - 
+-----------
+Uredjaj: 990 unutarnja temperatura
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 244 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 351 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 13.3
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 403 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 10
+13.12.2017. 01:01:31 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 50
+----------
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 531 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 834 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: 20
+13.12.2017. 01:01:31 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 45
+----------
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:01:31 - [WARNING] - 
+-----------
+Uredjaj: 418 unutarnja temperatura
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 793 kontakt
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: da
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:01:31 - [WARNING] - 
+-----------
+Uredjaj: 60 svjetlo
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 207 svjetlo
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 461 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 651 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 16
+13.12.2017. 01:01:31 - [WARNING] - 
+-----------
+Uredjaj: 955 dizanje/spuštanje televizora
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 235 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:31 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 240 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 326 prepreka
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:01:31 - [INFO] - 
+-----------
+Uredjaj: 907 dim
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: da
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+Uredjaj dim (da/da) 100%
+Uredjaj dim (ne/da) 0%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj dizanje/spuštanje platna za ploču (176/200) 88%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj dim (da/da) 100%
+Uredjaj svjetlo (da/da) 100%
+Uredjaj kontakt (ne/da) 0%
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+Uredjaj vlaga (49/100) 49%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj vlaga (20/100) 20%
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+Uredjaj prepreka (ne/da) 0%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj vlaga (81/100) 81%
+Uredjaj dizanje/spuštanje televizora (44/100) 44%
+Uredjaj paljenje/gašenje lampe (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (27.3/40.0) 68%
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (13.3/40.0) 33%
+Uredjaj dizanje/spuštanje televizora (50/100) 50%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj dizanje/spuštanje televizora (45/100) 45%
+13.12.2017. 01:01:31 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+Uredjaj unutarnja temperatura (21.6/40.0) 54%
+Uredjaj kontakt (da/da) 100%
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+Uredjaj svjetlo (ne/da) 0%
+Uredjaj svjetlo (da/da) 100%
+Uredjaj prepreka (da/da) 100%
+Uredjaj vlaga (16/100) 16%
+Uredjaj dizanje/spuštanje televizora (40/100) 40%
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj dim (da/da) 100%
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 196 dim
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 231 dim
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 339 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 373 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:40 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 382 dizanje/spuštanje platna za ploču
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 84
+13.12.2017. 01:01:40 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 112
+----------
+13.12.2017. 01:01:40 - [WARNING] - 
+-----------
+Uredjaj: 413 paljenje/gašenje lampe
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 701 dim
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 863 svjetlo
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 343 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+13.12.2017. 01:01:40 - [WARNING] - 
+-----------
+Uredjaj: 152 vlaga
+Status: 0 (neuspjesne provjere: 2)
+Vrijednost: nepoznato
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 285 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:40 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 410 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 618 vlaga
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: 72
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 219 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 315 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: da
+----------
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 345 vlaga
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: 86
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 407 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: 12
+13.12.2017. 01:01:40 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 40
+----------
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 431 paljenje/gašenje lampe
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 919 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 985 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 990 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: 2.7
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+13.12.2017. 01:01:40 - [WARNING] - 
+-----------
+Uredjaj: 244 prepreka
+Status: 0 (neuspjesne provjere: 1)
+Vrijednost: nepoznato
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 351 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 24.4
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 403 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 47
+13.12.2017. 01:01:40 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 65
+----------
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 531 kontakt
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: da
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 834 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: 83
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 418 unutarnja temperatura
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: 10.5
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 793 kontakt
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 60 svjetlo
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 207 svjetlo
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 461 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 651 vlaga
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: 83
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 955 dizanje/spuštanje televizora
+Status: 1 (neuspjesne provjere: 2)
+Vrijednost: 44
+13.12.2017. 01:01:40 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: 82
+----------
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Radim provjeru uredjaja za 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 235 otvaranje/zatvaranje vrata
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:40 - [INFO] - 
+Aktuator izvršava radnju.
+Nova vrijednost: ne
+----------
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 240 prepreka
+Status: 1 (neuspjesne provjere: 1)
+Vrijednost: da
+13.12.2017. 01:01:40 - [WARNING] - 
+-----------
+Uredjaj: 326 prepreka
+Status: 0 (neuspjesne provjere: 3)
+Vrijednost: nepoznato
+13.12.2017. 01:01:40 - [WARNING] - Radim zamjenu uredjaja
+13.12.2017. 01:01:40 - [INFO] - 
+-----------
+Uredjaj: 296 prepreka
+Status: 1 (neuspjesne provjere: 0)
+Vrijednost: ne
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 70 FOI 1 - sistem sala
+-------------------------------------------------------------
+
+Uredjaj dim (ne/da) 0%
+Uredjaj dim (ne/da) 0%
+Uredjaj kontakt (ne/da) 0%
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj dizanje/spuštanje platna za ploču (112/200) 56%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj dim (da/da) 100%
+Uredjaj svjetlo (ne/da) 0%
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 93 FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 110 FOI 1 - parkiralište
+-------------------------------------------------------------
+
+Uredjaj vlaga (58/100) 58%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj kontakt (da/da) 100%
+Uredjaj vlaga (72/100) 72%
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 152 FOI 1 - dvorana 1
+-------------------------------------------------------------
+
+Uredjaj prepreka (da/da) 100%
+Uredjaj otvaranje/zatvaranje vrata (da/da) 100%
+Uredjaj vlaga (86/100) 86%
+Uredjaj dizanje/spuštanje televizora (40/100) 40%
+Uredjaj paljenje/gašenje lampe (ne/da) 0%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj unutarnja temperatura (2.7/40.0) 6%
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 177 FOI 1 - vijećnica
+-------------------------------------------------------------
+
+Uredjaj prepreka (ne/da) 0%
+Uredjaj unutarnja temperatura (24.4/40.0) 60%
+Uredjaj dizanje/spuštanje televizora (65/100) 65%
+Uredjaj kontakt (da/da) 100%
+Uredjaj dizanje/spuštanje televizora (83/100) 83%
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 206 FOI 1 - ulazna vrata
+-------------------------------------------------------------
+
+Uredjaj unutarnja temperatura (10.5/40.0) 26%
+Uredjaj kontakt (ne/da) 0%
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 565 FOI 1 - knjižnica
+-------------------------------------------------------------
+
+Uredjaj svjetlo (ne/da) 0%
+Uredjaj svjetlo (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+Uredjaj vlaga (83/100) 83%
+Uredjaj dizanje/spuštanje televizora (82/100) 82%
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Prikaz stanja uredjaja 615 FOI 1 - restoran
+-------------------------------------------------------------
+
+Uredjaj otvaranje/zatvaranje vrata (ne/da) 0%
+Uredjaj prepreka (da/da) 100%
+Uredjaj dim (da/da) 100%
+Uredjaj prepreka (ne/da) 0%
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Statistika za FOI 1 - sistem sala
+-------------------------------------------------------------
+Broj uklonjenih aktuatora: 0
+Broj senzora koji nisu prošli inicijalizaciju: 0
+Ukupan broj senzora: 5
+Broj aktuatora koji nisu prošli inicijalizaciju: 0
+Broj dodanih aktuatora: 3
+Broj uklonjenih senzora: 1
+Ukupan broj aktuatora: 3
+Broj dodanih senzora: 6
+
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Statistika za FOI 1 - dvorišna vrata
+-------------------------------------------------------------
+Broj uklonjenih aktuatora: 0
+Broj senzora koji nisu prošli inicijalizaciju: 2
+Ukupan broj senzora: 2
+Broj aktuatora koji nisu prošli inicijalizaciju: 0
+Broj dodanih aktuatora: 1
+Broj uklonjenih senzora: 0
+Ukupan broj aktuatora: 1
+Broj dodanih senzora: 2
+
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Statistika za FOI 1 - parkiralište
+-------------------------------------------------------------
+Broj uklonjenih aktuatora: 0
+Broj senzora koji nisu prošli inicijalizaciju: 0
+Ukupan broj senzora: 3
+Broj aktuatora koji nisu prošli inicijalizaciju: 0
+Broj dodanih aktuatora: 1
+Broj uklonjenih senzora: 0
+Ukupan broj aktuatora: 1
+Broj dodanih senzora: 3
+
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Statistika za FOI 1 - dvorana 1
+-------------------------------------------------------------
+Broj uklonjenih aktuatora: 1
+Broj senzora koji nisu prošli inicijalizaciju: 1
+Ukupan broj senzora: 6
+Broj aktuatora koji nisu prošli inicijalizaciju: 1
+Broj dodanih aktuatora: 5
+Broj uklonjenih senzora: 1
+Ukupan broj aktuatora: 4
+Broj dodanih senzora: 7
+
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Statistika za FOI 1 - vijećnica
+-------------------------------------------------------------
+Broj uklonjenih aktuatora: 0
+Broj senzora koji nisu prošli inicijalizaciju: 0
+Ukupan broj senzora: 3
+Broj aktuatora koji nisu prošli inicijalizaciju: 1
+Broj dodanih aktuatora: 3
+Broj uklonjenih senzora: 0
+Ukupan broj aktuatora: 3
+Broj dodanih senzora: 3
+
+13.12.2017. 01:01:40 - [INFO] - 
+-------------------------------------------------------------
+	Statistika za FOI 1 - ulazna vrata
+-------------------------------------------------------------
+Broj uklonjenih aktuatora: 0
+Broj senzora koji nisu prošli inicijalizaciju: 0
+Ukupan broj senzora: 2
+Broj aktuatora koji nisu prošli inicijalizaciju: 1
+Broj dodanih aktuatora: 1
+Broj uklonjenih senzora: 0
+Ukupan broj aktuatora: 1
+Broj dodanih senzora: 2
+
