@@ -15,44 +15,75 @@ import uzdiz_zadaca_3.utils.Params;
 public class ToFview {
 
     public static final String ANSI_ESC = "\033[";
-    private int x = 0;
-    private int x_max = Integer.parseInt(Params.params.get("-br").toString());
+    private int x = 1;
+    private int x_max = Integer.parseInt(Params.params.get("-br").toString())-Integer.parseInt(Params.params.get("-brk").toString());
     private int y = 0;
     private int y_max = Integer.parseInt(Params.params.get("-bs").toString());
-    
+    private int c_max = Integer.parseInt(Params.params.get("-brk").toString());
+
     private String input = "a";
 
     public ToFview() {
-        for (int i = 0; i < 24; i++) {
-            prikazi(i, 0, 21, "*");
+        ekran();
+    }
 
-        }
-        while (!input.contains("x")) {
-            postavi(23,0);
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Type some data for the program: ");
-            String input = scanner.nextLine();
-            for (int i = 15; i < 20; i++) {
-                postavi(i, 0);
-                System.out.println("test");
-                try {
-                    Thread.sleep(30);
-                } catch (InterruptedException ex) {
-                }
+    private void ekran() {
+        System.out.print("\033" + "c"); // clean screen
 
-            }
-        }
+        prikazi(37, "123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789");
+        prikazi(37, "123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789");
+        prikazi(37, "123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789");
+        prikazi(37, "123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789");
+        prikazi(37, "123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789");
+        prikazi(37, "123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789");
+        prikazi(37, "123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789");
+        prikazi(37, "123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789");
+        prikazi(37, "123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789");
+        prikazi(37, "123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123546789123456789123456789123456789123456789123456789");
 
     }
 
-    static void postavi(int x, int y) {
+    private void postavi(int x, int y) {
+        this.x = x;
+        this.y = y;
         System.out.print(ANSI_ESC + x + ";" + y + "f");
     }
 
-    static void prikazi(int x, int y, int boja, String tekst) {
-        postavi(x, y);
+    private void prikazi(int boja, String tekst) {
+
         System.out.print(ANSI_ESC + boja + "m");
-        System.out.print(tekst);
+
+        for (int i = 0; i < tekst.length(); i++) {
+            if (this.y <= this.y_max) {
+                postavi(this.x, this.y + 1);
+            } else if (this.x <= this.x_max) {
+                postavi(this.x + 1, 0);
+            } else {
+                boolean status = false;
+
+                while (!status) {
+                    System.out.print("Pritisnite n/N za nastavak...");
+                    Scanner scanner = new Scanner(System.in);
+                    String in = scanner.nextLine();
+                    
+                    if (in.toLowerCase().compareTo("n") == 0) {
+                        System.out.println("daa");
+                        status = true;
+                        this.x = 0;
+                        this.y = 1;
+                        System.out.print("\033" + "c"); // clean screen
+
+                    } else {
+                        System.out.print("\033" + "[2K");
+                    }
+                }
+
+            }
+
+            System.out.print(tekst.charAt(i));
+
+        }
+
     }
 
 }
