@@ -16,12 +16,12 @@ public class ToFview {
 
     public static final String ANSI_ESC = "\033[";
     private int x = 1;
-    private int x_max = Integer.parseInt(Params.params.get("-br").toString())-Integer.parseInt(Params.params.get("-brk").toString());
+    private int x_max = Integer.parseInt(Params.params.get("-br").toString()) - Integer.parseInt(Params.params.get("-brk").toString());
     private int y = 0;
     private int y_max = Integer.parseInt(Params.params.get("-bs").toString());
     private int c_max = Integer.parseInt(Params.params.get("-brk").toString());
-
-    private String input = "a";
+    private int c_x = x_max + 1;
+    private int c_y = 0;
 
     public ToFview() {
         ekran();
@@ -43,10 +43,35 @@ public class ToFview {
 
     }
 
-    private void postavi(int x, int y) {
-        this.x = x;
-        this.y = y;
+    private void postavi(int x, int y, boolean isC) {
+        if (isC) {
+            this.c_x = x;
+            this.c_y = y;
+        } else {
+            this.x = x;
+            this.y = y;
+        }
+
         System.out.print(ANSI_ESC + x + ";" + y + "f");
+    }
+
+    private void unos(String tekst) {
+        postavi(this.x_max + 1, 0, true);
+        System.out.print(ANSI_ESC + "2K");
+
+        for (int i = 0; i < tekst.length(); i++) {
+            if (this.c_y <= this.y_max) {
+                postavi(this.c_x, this.c_y + 1, true);
+            } else if (this.c_x <= this.c_max) {
+                postavi(this.c_x + 1, 0, true);
+            }
+            System.out.println(tekst.charAt(i));
+
+        }
+        
+        postavi(this.x_max + this.c_max, 0, true);
+        System.out.print(ANSI_ESC + "2K");
+
     }
 
     private void prikazi(int boja, String tekst) {
@@ -55,17 +80,18 @@ public class ToFview {
 
         for (int i = 0; i < tekst.length(); i++) {
             if (this.y <= this.y_max) {
-                postavi(this.x, this.y + 1);
-            } else if (this.x <= this.x_max) {
-                postavi(this.x + 1, 0);
+                postavi(this.x, this.y + 1, false);
+            } else if (this.x < this.x_max) {
+                postavi(this.x + 1, 0, false);
             } else {
                 boolean status = false;
 
                 while (!status) {
-                    System.out.print("Pritisnite n/N za nastavak...");
+
+                    unos("Pritisnite n/N za nastavak...");
                     Scanner scanner = new Scanner(System.in);
                     String in = scanner.nextLine();
-                    
+
                     if (in.toLowerCase().compareTo("n") == 0) {
                         System.out.println("daa");
                         status = true;
@@ -74,7 +100,7 @@ public class ToFview {
                         System.out.print("\033" + "c"); // clean screen
 
                     } else {
-                        System.out.print("\033" + "[2K");
+                        System.out.print(ANSI_ESC + "2K");
                     }
                 }
 
