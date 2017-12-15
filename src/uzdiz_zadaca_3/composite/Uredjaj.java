@@ -32,7 +32,7 @@ public abstract class Uredjaj implements Foi, Visitable {
 
     FoiLogger logger = FoiLogger.getInstance();
 
-    public Uredjaj(String naziv, int tip, int vrsta, float min, float max, String komentar) {
+    public Uredjaj(int id, String naziv, int tip, int vrsta, float min, float max, String komentar) {
         this.naziv = naziv;
         this.tip = tip;
         this.vrsta = vrsta;
@@ -40,7 +40,7 @@ public abstract class Uredjaj implements Foi, Visitable {
         this.max = max;
         this.komentar = komentar;
         this.vrijednost = this.kreirajVrijednost();
-        this.id = RandomNumber.dajSlucajniBroj(1, 1000);
+        this.id = id;
     }
 
     @Override

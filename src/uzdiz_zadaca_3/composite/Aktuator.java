@@ -20,8 +20,8 @@ public class Aktuator extends Uredjaj implements Foi, Visitable {
     private List<Senzor> senzori;
     boolean gore = true;
 
-    public Aktuator(String naziv, int tip, int vrsta, float min, float max, String komentar) {
-        super(naziv, tip, vrsta, min, max, komentar);
+    public Aktuator(int id, String naziv, int tip, int vrsta, float min, float max, String komentar) {
+        super(id, naziv, tip, vrsta, min, max, komentar);
         this.senzori = new ArrayList<Senzor>();
     }
 
@@ -53,7 +53,7 @@ public class Aktuator extends Uredjaj implements Foi, Visitable {
 
     @Override
     public Uredjaj zamjena() {
-        return new Aktuator(this.naziv, this.tip, this.vrsta, this.min, this.max, this.komentar);
+        return new Aktuator(this.id, this.naziv, this.tip, this.vrsta, this.min, this.max, this.komentar);
     }
     
     public void obaviRadnju() {

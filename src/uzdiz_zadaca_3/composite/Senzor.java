@@ -19,8 +19,8 @@ public class Senzor extends Uredjaj implements Foi, Visitable {
     private List<Aktuator> aktuatori;
     public boolean imaNovuVrijednost = false;
 
-    public Senzor(String naziv, int tip, int vrsta, float min, float max, String komentar) {
-        super(naziv, tip, vrsta, min, max, komentar);
+    public Senzor(int id, String naziv, int tip, int vrsta, float min, float max, String komentar) {
+        super(id, naziv, tip, vrsta, min, max, komentar);
         this.aktuatori = new ArrayList<Aktuator>();
     }
 
@@ -53,7 +53,7 @@ public class Senzor extends Uredjaj implements Foi, Visitable {
 
     @Override
     public Uredjaj zamjena() {
-        return new Senzor(this.naziv, this.tip, this.vrsta, this.min, this.max, this.komentar);
+        return new Senzor(this.id, this.naziv, this.tip, this.vrsta, this.min, this.max, this.komentar);
     }
 
     public boolean isImaNovuVrijednost() {

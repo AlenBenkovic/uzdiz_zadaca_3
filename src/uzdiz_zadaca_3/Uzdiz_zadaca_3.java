@@ -22,8 +22,8 @@ public class Uzdiz_zadaca_3 {
             ToF tof = new ToF.Builder()
                     .inicijalizirajSucelje()
                     .kreirajMjesta()
-                    /*.postaviUredjaje()
-                    .inicijalizacija()
+                    .postaviUredjaje()
+                    /*.inicijalizacija()
                     .opremanjeMjesta()*/
                     .build();
             
