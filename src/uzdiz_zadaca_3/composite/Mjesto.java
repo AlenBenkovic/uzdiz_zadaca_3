@@ -32,13 +32,13 @@ public class Mjesto implements Foi {
 
     HashMap<String, Integer> statistikaMjesta = new HashMap<String, Integer>();
 
-    public Mjesto(String naziv, int tip, int brojSenzora, int brojAktuatora) {
+    public Mjesto(int id, String naziv, int tip, int brojSenzora, int brojAktuatora) {
         this.uredjaji = new ArrayList<>();
         this.naziv = naziv;
         this.tip = tip;
         this.brojSenzora = brojSenzora;
         this.brojAktuatora = brojAktuatora;
-        this.id = RandomNumber.dajSlucajniBroj(1, 1000);
+        this.id = id;
         this.statistikaMjesta.put("Ukupan broj senzora", this.brojSenzora);
         this.statistikaMjesta.put("Ukupan broj aktuatora", this.brojAktuatora);
         this.statistikaMjesta.put("Broj senzora koji nisu prošli inicijalizaciju", 0);

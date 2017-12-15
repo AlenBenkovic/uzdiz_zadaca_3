@@ -6,6 +6,7 @@
 package uzdiz_zadaca_3.composite;
 
 import uzdiz_zadaca_3.logs.FoiLogger;
+import uzdiz_zadaca_3.utils.Params;
 import uzdiz_zadaca_3.utils.RandomNumber;
 import uzdiz_zadaca_3.visitor.Visitable;
 import uzdiz_zadaca_3.visitor.Visitor;
@@ -85,7 +86,7 @@ public abstract class Uredjaj implements Foi, Visitable {
     public abstract void pridruzenostUredjaja();
 
     public int status() {
-        return RandomNumber.dajSlucajniBroj(0, 100) < 90 ? 1 : 0;
+        return RandomNumber.dajSlucajniBroj(0, 100) < Integer.parseInt(Params.params.get("-pi").toString()) ? 1 : 0;
     }
 
     public abstract Uredjaj zamjena();

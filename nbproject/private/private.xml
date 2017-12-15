@@ -4,12 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/abenkovic/javadev/projects/uzdiz_zadaca_3/src/uzdiz_zadaca_3/mvc/ToFview.java</file>
-            <file>file:/home/abenkovic/javadev/projects/uzdiz_zadaca_3/src/uzdiz_zadaca_3/factory/FoiFactory.java</file>
             <file>file:/home/abenkovic/javadev/projects/uzdiz_zadaca_3/src/uzdiz_zadaca_3/utils/Params.java</file>
             <file>file:/home/abenkovic/javadev/projects/uzdiz_zadaca_3/src/uzdiz_zadaca_3/composite/FoiZgrada.java</file>
             <file>file:/home/abenkovic/javadev/projects/uzdiz_zadaca_3/src/uzdiz_zadaca_3/mvc/ToFcontroller.java</file>
-            <file>file:/home/abenkovic/javadev/projects/uzdiz_zadaca_3/src/uzdiz_zadaca_3/Uzdiz_zadaca_3.java</file>
             <file>file:/home/abenkovic/javadev/projects/uzdiz_zadaca_3/src/uzdiz_zadaca_3/builder/ToF.java</file>
+            <file>file:/home/abenkovic/javadev/projects/uzdiz_zadaca_3/src/uzdiz_zadaca_3/Uzdiz_zadaca_3.java</file>
         </group>
     </open-files>
 </project-private>

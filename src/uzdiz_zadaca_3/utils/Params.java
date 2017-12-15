@@ -106,9 +106,11 @@ public class Params {
             case "-s":
             case "-a":
             case "-r":
-                pattern = Pattern.compile("\\w*(.txt)?");
-                matcher = pattern.matcher(value);
-                status = matcher.matches();
+                if(value.contains(" ")){
+                    status = false;
+                } else {
+                    status = true;
+                }
                 break;
             case "-br":
                 status = Integer.parseInt(value) >= 24 && Integer.parseInt(value) <= 40;

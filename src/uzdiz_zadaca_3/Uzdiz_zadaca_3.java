@@ -21,8 +21,8 @@ public class Uzdiz_zadaca_3 {
         if (Params.checkArgs(args)) {
             ToF tof = new ToF.Builder()
                     .inicijalizirajSucelje()
-                    /*.kreirajMjesta()
-                    .postaviUredjaje()
+                    .kreirajMjesta()
+                    /*.postaviUredjaje()
                     .inicijalizacija()
                     .opremanjeMjesta()*/
                     .build();

@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import uzdiz_zadaca_3.composite.Mjesto;
-import uzdiz_zadaca_3.logs.FoiLogger;
+import uzdiz_zadaca_3.mvc.ToFview;
 
 /**
  *
@@ -19,7 +19,6 @@ import uzdiz_zadaca_3.logs.FoiLogger;
  */
 public class MjestoFactory extends FoiFactory {
 
-    FoiLogger logger = FoiLogger.getInstance();
 
     @Override
     public List<Mjesto> kreirajMjesta(String datoteka) {
@@ -43,13 +42,13 @@ public class MjestoFactory extends FoiFactory {
 
                 } else if (podatak.length == brojAtributa) {
 
-                    if (postojiMjesto(podatak[0], mjesta)) {
+                    if (postojiMjesto(Integer.parseInt(podatak[0]), mjesta)) {
 
-                        this.logger.log("Mjesto " + podatak[0] + " već postoji.", "warning");
+                        ToFview.prikazi("Mjesto " + podatak[1] + " već postoji.", "warning");
 
                     } else {
 
-                        this.logger.log("Kreiram mjesto " + podatak[0] + " .", "info");
+                        ToFview.prikazi("Kreiram mjesto " + podatak[1] + " .", "info");
                         Mjesto mjesto = this.kreirajMjesto(podatak);
                         mjesta.add(mjesto);
 
@@ -57,7 +56,7 @@ public class MjestoFactory extends FoiFactory {
 
                 } else {
 
-                    this.logger.log("Format zapisa za mjesto " + podatak[0] + " nije valjan.", "warning");
+                    ToFview.prikazi("Format zapisa za mjesto " + podatak[1] + " nije valjan.", "warning");
 
                 }
             }
@@ -75,23 +74,24 @@ public class MjestoFactory extends FoiFactory {
     public Mjesto kreirajMjesto(String[] podaciMjesta) {
         Mjesto mjesto = null;
         try {
-            mjesto = new Mjesto(podaciMjesta[0],
-                    Integer.parseInt(podaciMjesta[1]),
+            mjesto = new Mjesto(Integer.parseInt(podaciMjesta[0]),
+                    podaciMjesta[1],
                     Integer.parseInt(podaciMjesta[2]),
-                    Integer.parseInt(podaciMjesta[3]));
+                    Integer.parseInt(podaciMjesta[3]),
+                    Integer.parseInt(podaciMjesta[4]));
 
         } catch (Exception e) {
-            this.logger.log("Format datoteke za mjesta nije valjan!", "warning");
+            ToFview.prikazi("Format datoteke za mjesta nije valjan!", "warning");
             System.exit(0);
         }
 
         return mjesto;
     }
 
-    private boolean postojiMjesto(String naziv, List<Mjesto> mjesta) {
+    private boolean postojiMjesto(int id, List<Mjesto> mjesta) {
         boolean status = false;
         for (Mjesto m : mjesta) {
-            if (m.naziv.equals(naziv)) {
+            if (m.id == id) {
                 status = true;
             }
         }
