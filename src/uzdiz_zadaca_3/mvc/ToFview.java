@@ -16,7 +16,7 @@ public class ToFview {
 
     public static final String ANSI_ESC = "\033[";
     private static int x = 1;
-    private static final int X_MAX = Integer.parseInt(Params.params.get("-br").toString()) - Integer.parseInt(Params.params.get("-brk").toString());
+    private static final int X_MAX = Integer.parseInt(Params.params.get("-br").toString()) - Integer.parseInt(Params.params.get("-brk").toString())+1;
     private static int y = 0;
     private static final int Y_MAX = Integer.parseInt(Params.params.get("-bs").toString());
     private static final int UNOS_MAX = Integer.parseInt(Params.params.get("-brk").toString());
@@ -32,33 +32,32 @@ public class ToFview {
 
     }
 
-    public static void postavi(int k, int l, boolean isC) {
+    public static void postavi(int j, int k, boolean isC) {
         if (isC) {
-            unos_x = x;
-            unos_y = y;
+            unos_x = j;
+            unos_y = k;
         } else {
-            x = k;
-            y = l;
+            x = j;
+            y = k;
         }
 
-        System.out.print(ANSI_ESC + x + ";" + y + "f");
+        System.out.print(ANSI_ESC + j + ";" + k + "f");
     }
 
     public static void unos(String tekst) {
-        postavi(X_MAX + 1, 0, true);
+        postavi(X_MAX, 0, true);
         System.out.print(ANSI_ESC + "2K");
 
         for (int i = 0; i < tekst.length(); i++) {
-            if (unos_y <= Y_MAX) {
+            if (unos_y <=Y_MAX) {
                 postavi(unos_x, unos_y + 1, true);
-            } else if (unos_x <= UNOS_MAX) {
+            } else if (unos_x < UNOS_MAX) {
                 postavi(unos_x + 1, 0, true);
             }
             System.out.println(tekst.charAt(i));
-
         }
-
-        postavi(X_MAX + UNOS_MAX, 0, true);
+        
+        postavi(X_MAX + 1, 0, true);
         System.out.print(ANSI_ESC + "2K");
 
     }
@@ -74,14 +73,17 @@ public class ToFview {
         }
 
         for (int i = 0; i < tekst.length(); i++) {
-            if (y <= Y_MAX) {
+            if (y < Y_MAX) {
                 postavi(x, y + 1, false);
             } else if (x < X_MAX) {
                 postavi(x + 1, 0, false);
-            } else {
+            }
+
+            if (x == X_MAX) {
                 boolean status = false;
 
                 while (!status) {
+                    System.out.print(ANSI_ESC + "0m");
 
                     unos("Pritisnite n/N za nastavak...");
                     Scanner scanner = new Scanner(System.in);
@@ -104,7 +106,7 @@ public class ToFview {
 
         }
         // reset
-        postavi(x+1, 0, false);
+        postavi(x + 1, 0, false);
         System.out.print(ANSI_ESC + "0m");
 
     }
