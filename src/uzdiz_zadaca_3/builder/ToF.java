@@ -62,6 +62,11 @@ public class ToF {
             uredjajModeli = factory.ucitajModeleUredjaja(false);
             return this;
         }
+        
+        public Builder ucitajraspored() {
+
+            return this;
+        }
 
         public Builder postaviUredjaje() {
             // this.foiZgrada.postaviUredjaje();

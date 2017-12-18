@@ -63,6 +63,7 @@ public class ToFview {
     }
 
     public static void prikazi(String tekst, String type) {
+        boolean novaStranica = false;
         switch (type) {
             case "info":
                 System.out.print(ANSI_ESC + "37m");
@@ -94,19 +95,20 @@ public class ToFview {
 
                     if (in.toLowerCase().compareTo("n") == 0) {
                         status = true;
-                        System.out.print("\033" + "c"); // clean screen
-                        postavi(0, 1, false);
 
                     } else {
                         System.out.print(ANSI_ESC + "2K");
                     }
                 }
 
+                System.out.print("\033" + "c"); // clean screen
+                postavi(0, 1, false);
+
             }
 
             System.out.print(tekst.charAt(i));
-
         }
+
         // reset
         postavi(x + 1, 0, false);
         System.out.print(ANSI_ESC + "0m");
