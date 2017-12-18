@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import uzdiz_zadaca_3.composite.Aktuator;
 import uzdiz_zadaca_3.composite.Senzor;
 import uzdiz_zadaca_3.composite.Uredjaj;
-import uzdiz_zadaca_3.logs.FoiLogger;
+import uzdiz_zadaca_3.mvc.ToFview;
 import uzdiz_zadaca_3.utils.Params;
 import uzdiz_zadaca_3.utils.RandomNumber;
 
@@ -22,7 +22,6 @@ import uzdiz_zadaca_3.utils.RandomNumber;
  */
 public class UredjajFactory extends FoiFactory {
 
-    FoiLogger logger = FoiLogger.getInstance();
     ArrayList<String[]> popisSenzora;
     ArrayList<String[]> popisAktuatora;
 
@@ -38,14 +37,14 @@ public class UredjajFactory extends FoiFactory {
         ArrayList<String[]> odgovarajuciUredjaji = new ArrayList<>();
         if (isSenzor) {
             for (String[] senzor : this.popisSenzora) {
-                if (Integer.parseInt(senzor[1]) == tip || Integer.parseInt(senzor[1]) == 2) {
+                if (Integer.parseInt(senzor[2]) == tip || Integer.parseInt(senzor[2]) == 2) {
                    odgovarajuciUredjaji.add(senzor);
                 }
 
             }
         } else {
             for (String[] aktuator : this.popisAktuatora) {
-                if (Integer.parseInt(aktuator[1]) == tip || Integer.parseInt(aktuator[1]) == 2) {
+                if (Integer.parseInt(aktuator[2]) == tip || Integer.parseInt(aktuator[2]) == 2) {
                    odgovarajuciUredjaji.add(aktuator);
                 }
 
@@ -76,22 +75,22 @@ public class UredjajFactory extends FoiFactory {
                     }
 
                 } else {
-                    this.logger.log("Format zapisa za " + podatak[0] + " nije valjan.", "warning");
+                    ToFview.prikazi("Format zapisa za " + podatak[1] + " nije valjan.", "warning");
                 }
             }
         } catch (IOException e) {
-            System.out.println("Greska prilikom citanja datoteke: " + e.toString());
+            ToFview.prikazi("Greska prilikom citanja datoteke: " + e.toString(), "warning");
         }
 
     }
 
     public Senzor kreirajSenzor(String[] senzor) {
-        this.logger.log("[Senzor] " + senzor[0], "info");
+        ToFview.prikazi("[Senzor] " + senzor[1], "info");
         return new Senzor(Integer.parseInt(senzor[0]), senzor[1], Integer.parseInt(senzor[2]), Integer.parseInt(senzor[3]), Float.parseFloat(senzor[4]), Float.parseFloat(senzor[5]), senzor.length == 6 ? "-" : senzor[6]);
     }
 
     public Aktuator kreirajAktuator(String[] aktuator) {
-        this.logger.log("[Aktuator] " + aktuator[0], "info");
+        ToFview.prikazi("[Aktuator] " + aktuator[1], "info");
         return new Aktuator(Integer.parseInt(aktuator[0]), aktuator[1], Integer.parseInt(aktuator[2]), Integer.parseInt(aktuator[3]), Float.parseFloat(aktuator[4]), Float.parseFloat(aktuator[5]), aktuator.length == 6 ? "-" : aktuator[6]);
     }
 

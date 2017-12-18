@@ -18,7 +18,6 @@ import uzdiz_zadaca_3.utils.Params;
  */
 public class ToF {
 
-    private final FoiLogger logger = FoiLogger.getInstance();
     private final FoiZgrada foiZgrada;
 
     public ToF(Builder builder) {
@@ -27,7 +26,6 @@ public class ToF {
 
     public static class Builder {
 
-        private final FoiLogger logger = FoiLogger.getInstance();
         private final FoiZgrada foiZgrada = new FoiZgrada();
 
         public Builder() {
@@ -87,7 +85,7 @@ public class ToF {
                     this.foiZgrada.stanjeUredjaja();
 
                 } catch (InterruptedException ex) {
-                    this.logger.log("Problem u radu sa dretvom", "warning");
+                    ToFview.prikazi("Problem u radu sa dretvom", "warning");
                 }
 
             }

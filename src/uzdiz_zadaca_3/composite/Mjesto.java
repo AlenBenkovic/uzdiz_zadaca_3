@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import uzdiz_zadaca_3.iterator.FoiIterator;
-import uzdiz_zadaca_3.logs.FoiLogger;
+import uzdiz_zadaca_3.mvc.ToFview;
 import uzdiz_zadaca_3.utils.Params;
 import uzdiz_zadaca_3.utils.RandomNumber;
 
@@ -19,7 +19,6 @@ import uzdiz_zadaca_3.utils.RandomNumber;
  */
 public class Mjesto implements Foi {
 
-    private final FoiLogger logger = FoiLogger.getInstance();
     public final String naziv;
     public final int tip;
     public final int brojSenzora;
@@ -60,7 +59,7 @@ public class Mjesto implements Foi {
             while (iterator.hasNext()) {
                 Uredjaj u = (Uredjaj) iterator.next();
                 if (!u.provjera()) { // ako provjera nije uspjela
-                    this.logger.log("Radim zamjenu uredjaja", "warning");
+                    ToFview.prikazi("Radim zamjenu uredjaja", "warning");
                     this.uredjaji.add(u.zamjena());
                     this.uredjaji.remove(u);
                     if (u instanceof Senzor) {
@@ -90,7 +89,7 @@ public class Mjesto implements Foi {
                 }
             }
         } catch (Exception e) {
-            this.logger.log("Greska prilikom ucitavanja klase: " + e.getMessage(), "warning");
+            ToFview.prikazi("Greska prilikom ucitavanja klase: " + e.getMessage(), "warning");
         }
 
         return true;
@@ -121,10 +120,10 @@ public class Mjesto implements Foi {
 
     @Override
     public boolean inicijalizacija() {
-        ArrayList<Uredjaj> neispravniUredjaji = new ArrayList<Uredjaj>();
+        ArrayList<Uredjaj> neispravniUredjaji = new ArrayList<>();
         for (Uredjaj uredjaj : this.uredjaji) {
             if (!uredjaj.inicijalizacija()) {
-                this.logger.log(uredjaj.naziv + " [0]", "warning");
+                ToFview.prikazi(uredjaj.naziv + " [0]", "warning");
                 neispravniUredjaji.add(uredjaj);
                 if (uredjaj instanceof Senzor) {
                     int tmp = this.statistikaMjesta.get("Broj senzora koji nisu prošli inicijalizaciju");
@@ -134,7 +133,7 @@ public class Mjesto implements Foi {
                     this.statistikaMjesta.put("Broj aktuatora koji nisu prošli inicijalizaciju", tmp + 1);
                 }
             } else {
-                this.logger.log(uredjaj.naziv + " [1]", "info");
+                ToFview.prikazi(uredjaj.naziv + " [1]", "info");
             }
         }
 
@@ -171,7 +170,7 @@ public class Mjesto implements Foi {
                         }
 
                     } catch (Exception e) {
-                        this.logger.log("Greska kod dodjele senzora: " + e.toString(), "warning");
+                        ToFview.prikazi("Greska kod dodjele senzora: " + e.toString(), "warning");
                     }
 
                 }

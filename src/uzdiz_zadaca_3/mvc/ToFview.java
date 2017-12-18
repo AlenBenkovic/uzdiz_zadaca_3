@@ -70,6 +70,9 @@ public class ToFview {
             case "warning":
                 System.out.print(ANSI_ESC + "41m");
                 break;
+            case "title":
+                System.out.print(ANSI_ESC + "45m");
+                break;
         }
 
         for (int i = 0; i < tekst.length(); i++) {
