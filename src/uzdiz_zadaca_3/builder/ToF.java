@@ -5,9 +5,13 @@
  */
 package uzdiz_zadaca_3.builder;
 
+import java.util.ArrayList;
+import java.util.List;
 import uzdiz_zadaca_3.composite.FoiZgrada;
+import uzdiz_zadaca_3.composite.Uredjaj;
 import uzdiz_zadaca_3.factory.FoiFactory;
 import uzdiz_zadaca_3.factory.MjestoFactory;
+import uzdiz_zadaca_3.factory.UredjajFactory;
 import uzdiz_zadaca_3.logs.FoiLogger;
 import uzdiz_zadaca_3.mvc.ToFview;
 import uzdiz_zadaca_3.utils.Params;
@@ -27,6 +31,8 @@ public class ToF {
     public static class Builder {
 
         private final FoiZgrada foiZgrada = new FoiZgrada();
+        private List<Uredjaj> uredjajModeli = new ArrayList<>();
+
 
         public Builder() {
             // this.logger.init(Params.params.get("-i").toString(), Integer.parseInt(Params.params.get("-brl").toString()));
@@ -47,9 +53,18 @@ public class ToF {
 
             return this;
         }
+        
+        public Builder ucitajModeleUredjaja() {
+            FoiFactory factory = new UredjajFactory();
+            ToFview.prikazi("Ucitavam modele senzora", "title");
+            uredjajModeli = factory.ucitajModeleUredjaja(true);
+            ToFview.prikazi("Ucitavam modele aktuatora", "title");
+            uredjajModeli = factory.ucitajModeleUredjaja(false);
+            return this;
+        }
 
         public Builder postaviUredjaje() {
-            this.foiZgrada.postaviUredjaje();
+            // this.foiZgrada.postaviUredjaje();
 
             return this;
         }

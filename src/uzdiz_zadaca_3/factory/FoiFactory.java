@@ -14,15 +14,21 @@ import uzdiz_zadaca_3.composite.Uredjaj;
  * @author abenkovic
  */
 public abstract class FoiFactory {
-    
+
     public void FoiFactory() {
 
     }
-    
-    public List<Mjesto> kreirajMjesta(String datoteka) { return null;};
 
-    
-    public Uredjaj kreirajUredjaj(boolean isSenzor, int tip){ return null;};
-    
-    
+    public List<Mjesto> kreirajMjesta(String datoteka) {
+        return null;
+    }
+
+    public Uredjaj kreirajUredjaj(boolean isSenzor, int tip) {
+        return null;
+    }
+
+    public List<Uredjaj> ucitajModeleUredjaja(boolean isSenzor) {
+        return null;
+    }
+
 }

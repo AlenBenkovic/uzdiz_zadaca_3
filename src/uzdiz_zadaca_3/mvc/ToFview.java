@@ -16,7 +16,7 @@ public class ToFview {
 
     public static final String ANSI_ESC = "\033[";
     private static int x = 1;
-    private static final int X_MAX = Integer.parseInt(Params.params.get("-br").toString()) - Integer.parseInt(Params.params.get("-brk").toString())+1;
+    private static final int X_MAX = Integer.parseInt(Params.params.get("-br").toString()) - Integer.parseInt(Params.params.get("-brk").toString()) + 1;
     private static int y = 0;
     private static final int Y_MAX = Integer.parseInt(Params.params.get("-bs").toString());
     private static final int UNOS_MAX = Integer.parseInt(Params.params.get("-brk").toString());
@@ -49,14 +49,14 @@ public class ToFview {
         System.out.print(ANSI_ESC + "2K");
 
         for (int i = 0; i < tekst.length(); i++) {
-            if (unos_y <=Y_MAX) {
+            if (unos_y <= Y_MAX) {
                 postavi(unos_x, unos_y + 1, true);
             } else if (unos_x < UNOS_MAX) {
                 postavi(unos_x + 1, 0, true);
             }
             System.out.println(tekst.charAt(i));
         }
-        
+
         postavi(X_MAX + 1, 0, true);
         System.out.print(ANSI_ESC + "2K");
 
@@ -71,7 +71,7 @@ public class ToFview {
                 System.out.print(ANSI_ESC + "41m");
                 break;
             case "title":
-                System.out.print(ANSI_ESC + "45m");
+                System.out.print(ANSI_ESC + "44m");
                 break;
         }
 
@@ -94,9 +94,8 @@ public class ToFview {
 
                     if (in.toLowerCase().compareTo("n") == 0) {
                         status = true;
-                        x = 0;
-                        y = 1;
                         System.out.print("\033" + "c"); // clean screen
+                        postavi(0, 1, false);
 
                     } else {
                         System.out.print(ANSI_ESC + "2K");
