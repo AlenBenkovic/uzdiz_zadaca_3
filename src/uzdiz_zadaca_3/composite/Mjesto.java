@@ -118,6 +118,20 @@ public class Mjesto implements Foi {
         this.uredjaji = uredjaji;
     }
 
+    public int trenutniBrojUredjaja(boolean isSenzor) {
+        int senzori = 0;
+        int aktuatori = 0;
+        for (Uredjaj uredjaj : uredjaji) {
+            if (uredjaj instanceof Senzor) {
+                senzori++;
+            } else {
+                aktuatori++;
+            }
+        }
+
+        return isSenzor ? senzori : aktuatori;
+    }
+
     @Override
     public boolean inicijalizacija() {
         ArrayList<Uredjaj> neispravniUredjaji = new ArrayList<>();

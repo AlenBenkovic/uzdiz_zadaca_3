@@ -87,13 +87,22 @@ public class FoiZgrada implements Foi {
                             Uredjaj uredjaj;
 
                             if (u != null && m != null) {
-                                if (Integer.parseInt(podatak[2]) == 0) {
+                                if (Integer.parseInt(podatak[2]) == 0 && m.trenutniBrojUredjaja(true) < m.brojSenzora) {
                                     uredjaj = new Senzor(Integer.parseInt(podatak[4]), u.naziv, u.tip, u.vrsta, u.min, u.max, u.komentar);
+                                    m.addUredjaj(uredjaj);
+                                    ToFview.prikazi(m.naziv + " -> " + u.naziv, "info");
                                 } else {
-                                    uredjaj = new Aktuator(Integer.parseInt(podatak[4]), u.naziv, u.tip, u.vrsta, u.min, u.max, u.komentar);
+                                    ToFview.prikazi(m.naziv + " dosegnut je maksimalni broj senzora", "warning");
                                 }
-                                m.addUredjaj(uredjaj);
-                                ToFview.prikazi(m.naziv + " -> " + u.naziv, "info");
+
+                                if (m.trenutniBrojUredjaja(false) < m.brojAktuatora) {
+                                    uredjaj = new Aktuator(Integer.parseInt(podatak[4]), u.naziv, u.tip, u.vrsta, u.min, u.max, u.komentar);
+                                    m.addUredjaj(uredjaj);
+                                    ToFview.prikazi(m.naziv + " -> " + u.naziv, "info");
+                                } else {
+                                    ToFview.prikazi(m.naziv + " dosegnut je maksimalni broj aktuatora", "warning");
+                                }
+
                                 // radi nesta pametno
                             } else if (u == null) {
                                 ToFview.prikazi("Ne mogu kreirati uredjaj jer ne postoji model sa ID-om " + podatak[3], "warning");
