@@ -62,6 +62,7 @@ public class FoiZgrada implements Foi {
     }
 
     public void ucitajRaspored() {
+        ToFview.prikazi("Ucitavam raspored uredjaja", "title");
         List<String[]> drugiPokusaj = new ArrayList<>();
         try {
             FileReader fr = new FileReader(Params.params.get("-r").toString());
@@ -124,7 +125,7 @@ public class FoiZgrada implements Foi {
                             Aktuator aktuator = (Aktuator) this.dohvatiUredjaj(Integer.parseInt(podatak[1]));
                             String[] senzori = podatak[2].trim().split(",");
                             for (int i = 0; i < senzori.length; i++) {
-                                Senzor senzor = (Senzor) this.dohvatiUredjaj(Integer.parseInt(podatak[1]));
+                                Senzor senzor = (Senzor) this.dohvatiUredjaj(Integer.parseInt(senzori[i]));
                                 if (aktuator != null && senzor != null) {
                                     aktuator.add(senzor);
                                     senzor.add(aktuator);
@@ -156,7 +157,7 @@ public class FoiZgrada implements Foi {
                         aktuator.add(senzor);
                         senzor.add(aktuator);
                     } else {
-                        ToFview.prikazi("Ne postoje trazeni uredjaji.", "warning");
+                        ToFview.prikazi("Ne postoji trazeni uredjaj ID " + senzori[i] , "warning");
                     }
                 }
             }
