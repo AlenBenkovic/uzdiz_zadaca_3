@@ -62,7 +62,7 @@ public class FoiZgrada implements Foi {
     }
 
     public void ucitajRaspored() {
-        UredjajFactory factory = new UredjajFactory();
+        List<String[]> drugiPokusaj = new ArrayList<>();
         try {
             FileReader fr = new FileReader(Params.params.get("-r").toString());
             BufferedReader br = new BufferedReader(fr);
@@ -82,29 +82,28 @@ public class FoiZgrada implements Foi {
                          */
                         if (podatak.length == 5) {
 
-                            Uredjaj u = this.dohvatiModel(Integer.parseInt(podatak[3]));
-                            Mjesto m = this.dohvatiMjesto(Integer.parseInt(podatak[1]));
+                            Uredjaj model = this.dohvatiModel(Integer.parseInt(podatak[3]));
+                            Mjesto mjesto = this.dohvatiMjesto(Integer.parseInt(podatak[1]));
                             Uredjaj uredjaj;
 
-                            if (u != null && m != null) {
-                                if (Integer.parseInt(podatak[2]) == 0 && m.trenutniBrojUredjaja(true) < m.brojSenzora) {
-                                    uredjaj = new Senzor(Integer.parseInt(podatak[4]), u.naziv, u.tip, u.vrsta, u.min, u.max, u.komentar);
-                                    m.addUredjaj(uredjaj);
-                                    ToFview.prikazi(m.naziv + " -> " + u.naziv, "info");
+                            if (model != null && mjesto != null) {
+                                if (Integer.parseInt(podatak[2]) == 0 && mjesto.trenutniBrojUredjaja(true) < mjesto.brojSenzora) {
+                                    uredjaj = new Senzor(Integer.parseInt(podatak[4]), model.naziv, model.tip, model.vrsta, model.min, model.max, model.komentar);
+                                    mjesto.addUredjaj(uredjaj);
+                                    ToFview.prikazi(mjesto.naziv + " -> [senzor] " + uredjaj.id + " " + uredjaj.naziv, "info");
+                                } else if (Integer.parseInt(podatak[2]) == 1 && mjesto.trenutniBrojUredjaja(false) < mjesto.brojAktuatora) {
+                                    uredjaj = new Aktuator(Integer.parseInt(podatak[4]), model.naziv, model.tip, model.vrsta, model.min, model.max, model.komentar);
+                                    mjesto.addUredjaj(uredjaj);
+                                    ToFview.prikazi(mjesto.naziv + " -> [aktuator] " + uredjaj.id + " " + uredjaj.naziv, "info");
                                 } else {
-                                    ToFview.prikazi(m.naziv + " dosegnut je maksimalni broj senzora", "warning");
+                                    if (Integer.parseInt(podatak[2]) == 0) {
+                                        ToFview.prikazi(mjesto.naziv + " -> dosegnut je maksimalni broj senzora", "warning");
+                                    } else {
+                                        ToFview.prikazi(mjesto.naziv + " -> dosegnut je maksimalni broj aktuatora", "warning");
+                                    }
                                 }
 
-                                if (m.trenutniBrojUredjaja(false) < m.brojAktuatora) {
-                                    uredjaj = new Aktuator(Integer.parseInt(podatak[4]), u.naziv, u.tip, u.vrsta, u.min, u.max, u.komentar);
-                                    m.addUredjaj(uredjaj);
-                                    ToFview.prikazi(m.naziv + " -> " + u.naziv, "info");
-                                } else {
-                                    ToFview.prikazi(m.naziv + " dosegnut je maksimalni broj aktuatora", "warning");
-                                }
-
-                                // radi nesta pametno
-                            } else if (u == null) {
+                            } else if (model == null) {
                                 ToFview.prikazi("Ne mogu kreirati uredjaj jer ne postoji model sa ID-om " + podatak[3], "warning");
                             } else {
                                 ToFview.prikazi("Mjesto sa ID-om " + podatak[1] + " ne postoji.", "warning");
@@ -114,13 +113,26 @@ public class FoiZgrada implements Foi {
                             ToFview.prikazi("Format rasporeda uredjaja po mjestima nije valjan", "warning");
                         }
                     } else if (Integer.parseInt(podatak[0]) == 1) {
+
                         /*
                             0 - tip zapisa (mjesto ili aktuator)
                             1 - ID aktuatora
                             2 - ID senzora [više njih]
                          */
-                        ToFview.prikazi("Raspored senzora po aktuatorima", "info");
+                        // ToFview.prikazi("Raspored senzora po aktuatorima", "info");
                         if (podatak.length == 3) {
+                            Aktuator aktuator = (Aktuator) this.dohvatiUredjaj(Integer.parseInt(podatak[1]));
+                            String[] senzori = podatak[2].trim().split(",");
+                            for (int i = 0; i < senzori.length; i++) {
+                                Senzor senzor = (Senzor) this.dohvatiUredjaj(Integer.parseInt(podatak[1]));
+                                if (aktuator != null && senzor != null) {
+                                    aktuator.add(senzor);
+                                    senzor.add(aktuator);
+                                } else {
+                                    drugiPokusaj.add(podatak);
+                                }
+                            }
+
                             // radi nesta pametno
                         } else {
                             ToFview.prikazi("Format rasporeda senzora po aktuatorima nije valjan", "warning");
@@ -132,6 +144,22 @@ public class FoiZgrada implements Foi {
             }
         } catch (IOException e) {
             ToFview.prikazi("Greska prilikom citanja datoteke: " + e.toString(), "warning");
+        }
+
+        if (!drugiPokusaj.isEmpty()) {
+            for (String[] podatak : drugiPokusaj) {
+                Aktuator aktuator = (Aktuator) this.dohvatiUredjaj(Integer.parseInt(podatak[1]));
+                String[] senzori = podatak[2].trim().split(",");
+                for (int i = 0; i < senzori.length; i++) {
+                    Senzor senzor = (Senzor) this.dohvatiUredjaj(Integer.parseInt(senzori[i]));
+                    if (aktuator != null && senzor != null) {
+                        aktuator.add(senzor);
+                        senzor.add(aktuator);
+                    } else {
+                        ToFview.prikazi("Ne postoje trazeni uredjaji.", "warning");
+                    }
+                }
+            }
         }
     }
 
@@ -148,6 +176,17 @@ public class FoiZgrada implements Foi {
         for (Mjesto mjesto : mjesta) {
             if (mjesto.id == id) {
                 return mjesto;
+            }
+        }
+        return null;
+    }
+
+    private Uredjaj dohvatiUredjaj(int id) {
+        for (Mjesto mjesto : mjesta) {
+            for (Uredjaj u : mjesto.getUredjaji()) {
+                if (u.id == id) {
+                    return u;
+                }
             }
         }
         return null;
