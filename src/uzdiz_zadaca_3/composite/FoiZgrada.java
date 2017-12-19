@@ -89,13 +89,22 @@ public class FoiZgrada implements Foi {
 
                             if (model != null && mjesto != null) {
                                 if (Integer.parseInt(podatak[2]) == 0 && mjesto.trenutniBrojUredjaja(true) < mjesto.brojSenzora) {
-                                    uredjaj = new Senzor(Integer.parseInt(podatak[4]), model.naziv, model.tip, model.vrsta, model.min, model.max, model.komentar);
-                                    mjesto.addUredjaj(uredjaj);
-                                    ToFview.prikazi(mjesto.naziv + " -> [senzor] " + uredjaj.id + " " + uredjaj.naziv, "info");
+                                    if (mjesto.tip == model.tip || model.tip == 2) {
+                                        uredjaj = new Senzor(Integer.parseInt(podatak[4]), model.naziv, model.tip, model.vrsta, model.min, model.max, model.komentar);
+                                        mjesto.addUredjaj(uredjaj);
+                                        ToFview.prikazi(mjesto.naziv + " -> [senzor] " + uredjaj.id + " " + uredjaj.naziv, "info");
+                                    } else {
+                                        ToFview.prikazi("Tip senzora ne odgovara mjestu!", "warning");
+                                    }
                                 } else if (Integer.parseInt(podatak[2]) == 1 && mjesto.trenutniBrojUredjaja(false) < mjesto.brojAktuatora) {
-                                    uredjaj = new Aktuator(Integer.parseInt(podatak[4]), model.naziv, model.tip, model.vrsta, model.min, model.max, model.komentar);
-                                    mjesto.addUredjaj(uredjaj);
-                                    ToFview.prikazi(mjesto.naziv + " -> [aktuator] " + uredjaj.id + " " + uredjaj.naziv, "info");
+                                    if (mjesto.tip == model.tip || model.tip == 2) {
+                                        uredjaj = new Aktuator(Integer.parseInt(podatak[4]), model.naziv, model.tip, model.vrsta, model.min, model.max, model.komentar);
+                                        mjesto.addUredjaj(uredjaj);
+                                        ToFview.prikazi(mjesto.naziv + " -> [aktuator] " + uredjaj.id + " " + uredjaj.naziv, "info");
+                                    } else {
+                                        ToFview.prikazi("Tip aktuatora ne odgovara mjestu!", "warning");
+                                    }
+
                                 } else {
                                     if (Integer.parseInt(podatak[2]) == 0) {
                                         ToFview.prikazi(mjesto.naziv + " -> dosegnut je maksimalni broj senzora", "warning");
@@ -143,7 +152,7 @@ public class FoiZgrada implements Foi {
 
                 redak++;
             }
-        } catch (IOException e) {
+        } catch (IOException | NumberFormatException e) {
             ToFview.prikazi("Greska prilikom citanja datoteke: " + e.toString(), "warning");
         }
 
@@ -157,7 +166,7 @@ public class FoiZgrada implements Foi {
                         aktuator.add(senzor);
                         senzor.add(aktuator);
                     } else {
-                        ToFview.prikazi("Ne postoji trazeni uredjaj ID " + senzori[i] , "warning");
+                        ToFview.prikazi("Ne postoji trazeni uredjaj ID " + senzori[i], "warning");
                     }
                 }
             }
