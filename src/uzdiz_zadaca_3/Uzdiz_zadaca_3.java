@@ -25,9 +25,7 @@ public class Uzdiz_zadaca_3 {
                     .kreirajMjesta()
                     .ucitajModeleUredjaja()
                     .ucitajraspored()
-                    //.postaviUredjaje()
-                    /*.inicijalizacija()
-                    .opremanjeMjesta()*/
+                    .inicijalizacija()
                     .build();
             
             //tof.radiProvjere();
