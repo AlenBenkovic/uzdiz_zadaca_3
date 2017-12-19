@@ -5,9 +5,14 @@
  */
 package uzdiz_zadaca_3.builder;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import uzdiz_zadaca_3.composite.Aktuator;
 import uzdiz_zadaca_3.composite.FoiZgrada;
+import uzdiz_zadaca_3.composite.Senzor;
 import uzdiz_zadaca_3.composite.Uredjaj;
 import uzdiz_zadaca_3.factory.FoiFactory;
 import uzdiz_zadaca_3.factory.MjestoFactory;
@@ -31,16 +36,14 @@ public class ToF {
     public static class Builder {
 
         private final FoiZgrada foiZgrada = new FoiZgrada();
-        private List<Uredjaj> uredjajModeli = new ArrayList<>();
-
-
+        
         public Builder() {
             // this.logger.init(Params.params.get("-i").toString(), Integer.parseInt(Params.params.get("-brl").toString()));
         }
-        
-        public Builder inicijalizirajSucelje(){
+
+        public Builder inicijalizirajSucelje() {
             ToFview view = new ToFview();
-                       
+
             return this;
         }
 
@@ -53,20 +56,17 @@ public class ToF {
 
             return this;
         }
-        
-        public Builder ucitajModeleUredjaja() {
-            FoiFactory factory = new UredjajFactory();
-            ToFview.prikazi("Ucitavam modele senzora", "title");
-            uredjajModeli = factory.ucitajModeleUredjaja(true);
-            ToFview.prikazi("Ucitavam modele aktuatora", "title");
-            uredjajModeli = factory.ucitajModeleUredjaja(false);
-            return this;
-        }
-        
-        public Builder ucitajraspored() {
 
+        public Builder ucitajModeleUredjaja() {
+            this.foiZgrada.ucitajModeleUredjaja();
             return this;
         }
+
+        public Builder ucitajraspored() {
+            this.foiZgrada.ucitajRaspored();
+            return this;
+        }
+        
 
         public Builder postaviUredjaje() {
             // this.foiZgrada.postaviUredjaje();

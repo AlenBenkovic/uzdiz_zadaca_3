@@ -24,6 +24,7 @@ public class Uzdiz_zadaca_3 {
                     .inicijalizirajSucelje()
                     .kreirajMjesta()
                     .ucitajModeleUredjaja()
+                    .ucitajraspored()
                     //.postaviUredjaje()
                     /*.inicijalizacija()
                     .opremanjeMjesta()*/

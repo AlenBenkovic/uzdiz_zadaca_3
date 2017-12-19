@@ -5,6 +5,9 @@
  */
 package uzdiz_zadaca_3.composite;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -13,6 +16,7 @@ import uzdiz_zadaca_3.factory.UredjajFactory;
 import uzdiz_zadaca_3.iterator.MjestoIterator;
 import uzdiz_zadaca_3.iterator.FoiIterator;
 import uzdiz_zadaca_3.mvc.ToFview;
+import uzdiz_zadaca_3.utils.Params;
 import uzdiz_zadaca_3.visitor.UredjajVisitor;
 
 /**
@@ -22,6 +26,7 @@ import uzdiz_zadaca_3.visitor.UredjajVisitor;
 public class FoiZgrada implements Foi {
 
     private List<Mjesto> mjesta = new ArrayList<>();
+    private List<Uredjaj> uredjajModeli = new ArrayList<>();
 
     @Override
     public boolean provjera() {
@@ -46,6 +51,97 @@ public class FoiZgrada implements Foi {
 
     public FoiIterator createIterator() {
         return new MjestoIterator(this.mjesta);
+    }
+
+    public void ucitajModeleUredjaja() {
+        FoiFactory factory = new UredjajFactory();
+        ToFview.prikazi("Ucitavam modele senzora", "title");
+        uredjajModeli = factory.ucitajModeleUredjaja(true);
+        ToFview.prikazi("Ucitavam modele aktuatora", "title");
+        uredjajModeli = factory.ucitajModeleUredjaja(false);
+    }
+
+    public void ucitajRaspored() {
+        UredjajFactory factory = new UredjajFactory();
+        try {
+            FileReader fr = new FileReader(Params.params.get("-r").toString());
+            BufferedReader br = new BufferedReader(fr);
+            String s;
+            int redak = 0;
+            while ((s = br.readLine()) != null) {
+                String[] podatak = s.trim().split(";");
+                if (redak > 2) { // prva tri reda su zaglavlje
+                    if (Integer.parseInt(podatak[0]) == 0) {
+                        // ToFview.prikazi("Raspored po mjestima", "info");
+                        /*
+                            0 - tip zapisa (mjesto ili aktuator)
+                            1 - ID mjesta
+                            2 - 0-senzor , 1-aktuator
+                            3 - model uredjaja
+                            4 - ID uredjaja
+                         */
+                        if (podatak.length == 5) {
+
+                            Uredjaj u = this.dohvatiModel(Integer.parseInt(podatak[3]));
+                            Mjesto m = this.dohvatiMjesto(Integer.parseInt(podatak[1]));
+                            Uredjaj uredjaj;
+
+                            if (u != null && m != null) {
+                                if (Integer.parseInt(podatak[2]) == 0) {
+                                    uredjaj = new Senzor(Integer.parseInt(podatak[4]), u.naziv, u.tip, u.vrsta, u.min, u.max, u.komentar);
+                                } else {
+                                    uredjaj = new Aktuator(Integer.parseInt(podatak[4]), u.naziv, u.tip, u.vrsta, u.min, u.max, u.komentar);
+                                }
+                                m.addUredjaj(uredjaj);
+                                ToFview.prikazi(m.naziv + " -> " + u.naziv, "info");
+                                // radi nesta pametno
+                            } else if (u == null) {
+                                ToFview.prikazi("Ne mogu kreirati uredjaj jer ne postoji model sa ID-om " + podatak[3], "warning");
+                            } else {
+                                ToFview.prikazi("Mjesto sa ID-om " + podatak[1] + " ne postoji.", "warning");
+                            }
+
+                        } else {
+                            ToFview.prikazi("Format rasporeda uredjaja po mjestima nije valjan", "warning");
+                        }
+                    } else if (Integer.parseInt(podatak[0]) == 1) {
+                        /*
+                            0 - tip zapisa (mjesto ili aktuator)
+                            1 - ID aktuatora
+                            2 - ID senzora [više njih]
+                         */
+                        ToFview.prikazi("Raspored senzora po aktuatorima", "info");
+                        if (podatak.length == 3) {
+                            // radi nesta pametno
+                        } else {
+                            ToFview.prikazi("Format rasporeda senzora po aktuatorima nije valjan", "warning");
+                        }
+                    }
+                }
+
+                redak++;
+            }
+        } catch (IOException e) {
+            ToFview.prikazi("Greska prilikom citanja datoteke: " + e.toString(), "warning");
+        }
+    }
+
+    private Uredjaj dohvatiModel(int id) {
+        for (Uredjaj uredjaj : this.uredjajModeli) {
+            if (uredjaj.id == id) {
+                return uredjaj;
+            }
+        }
+        return null;
+    }
+
+    private Mjesto dohvatiMjesto(int id) {
+        for (Mjesto mjesto : mjesta) {
+            if (mjesto.id == id) {
+                return mjesto;
+            }
+        }
+        return null;
     }
 
     @Override

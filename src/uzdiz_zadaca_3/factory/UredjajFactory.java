@@ -79,7 +79,7 @@ public class UredjajFactory extends FoiFactory {
                             // this.popisAktuatora.add(podatak);
                         }
                     } else {
-                        ToFview.prikazi("Uredjaj sa ID " + podatak[0] + " vec postoji.", "warning");
+                        ToFview.prikazi("Model uredjaja sa ID " + podatak[0] + " vec postoji.", "warning");
                     }
 
                 } else {
