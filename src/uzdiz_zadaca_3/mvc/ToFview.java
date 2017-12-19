@@ -16,7 +16,7 @@ public class ToFview {
 
     public static final String ANSI_ESC = "\033[";
     private static int x = 1;
-    private static final int X_MAX = Integer.parseInt(Params.params.get("-br").toString()) - Integer.parseInt(Params.params.get("-brk").toString()) + 1;
+    private static final int X_MAX = Integer.parseInt(Params.params.get("-br").toString()) - Integer.parseInt(Params.params.get("-brk").toString());
     private static int y = 0;
     private static final int Y_MAX = Integer.parseInt(Params.params.get("-bs").toString());
     private static final int UNOS_MAX = Integer.parseInt(Params.params.get("-brk").toString());
@@ -84,6 +84,7 @@ public class ToFview {
             }
 
             if (x == X_MAX) {
+                System.out.print(x + " - " + X_MAX);
                 boolean status = false;
 
                 while (!status) {
@@ -102,11 +103,12 @@ public class ToFview {
                 }
 
                 System.out.print("\033" + "c"); // clean screen
-                postavi(0, 1, false);
+                postavi(1, 1, false);
 
             }
 
             System.out.print(tekst.charAt(i));
+
         }
 
         // reset
