@@ -5,10 +5,8 @@
  */
 package uzdiz_zadaca_3.utils;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Collections;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -81,8 +79,7 @@ public class Params {
             status = (params.containsKey("-m")
                     && params.containsKey("-s")
                     && params.containsKey("-a")
-                    && params.containsKey("-r")
-                    && params.containsKey("-alg"));
+                    && params.containsKey("-r"));
 
             System.out.println(Collections.singletonList(params));
 
@@ -128,14 +125,6 @@ public class Params {
                 pattern = Pattern.compile("\\d*");
                 matcher = pattern.matcher(value);
                 status = matcher.matches();
-                break;
-            case "-alg":
-                try {
-                    Class.forName(value);
-                    status = true;
-                } catch (ClassNotFoundException e) {
-                    status = false;
-                }
                 break;
                 
         }

@@ -5,20 +5,13 @@
  */
 package uzdiz_zadaca_3.builder;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import uzdiz_zadaca_3.composite.Aktuator;
+import java.util.Scanner;
 import uzdiz_zadaca_3.composite.FoiZgrada;
-import uzdiz_zadaca_3.composite.Senzor;
-import uzdiz_zadaca_3.composite.Uredjaj;
 import uzdiz_zadaca_3.factory.FoiFactory;
 import uzdiz_zadaca_3.factory.MjestoFactory;
-import uzdiz_zadaca_3.factory.UredjajFactory;
-import uzdiz_zadaca_3.logs.FoiLogger;
 import uzdiz_zadaca_3.mvc.ToFview;
+import static uzdiz_zadaca_3.mvc.ToFview.ANSI_ESC;
+import static uzdiz_zadaca_3.mvc.ToFview.unos;
 import uzdiz_zadaca_3.utils.Params;
 
 /**
@@ -28,23 +21,20 @@ import uzdiz_zadaca_3.utils.Params;
 public class ToF {
 
     private final FoiZgrada foiZgrada;
+    private final ToFview view;
 
     public ToF(Builder builder) {
         this.foiZgrada = builder.foiZgrada;
+        this.view = builder.view;
     }
 
     public static class Builder {
 
         private final FoiZgrada foiZgrada = new FoiZgrada();
-        
+        private final ToFview view = new ToFview();
+
         public Builder() {
             // this.logger.init(Params.params.get("-i").toString(), Integer.parseInt(Params.params.get("-brl").toString()));
-        }
-
-        public Builder inicijalizirajSucelje() {
-            ToFview view = new ToFview();
-
-            return this;
         }
 
         public Builder kreirajMjesta() {
@@ -66,13 +56,6 @@ public class ToF {
             this.foiZgrada.ucitajRaspored();
             return this;
         }
-        
-
-        public Builder postaviUredjaje() {
-            // this.foiZgrada.postaviUredjaje();
-
-            return this;
-        }
 
         public Builder inicijalizacija() {
             this.foiZgrada.inicijalizacija();
@@ -80,17 +63,14 @@ public class ToF {
             return this;
         }
 
-        public Builder opremanjeMjesta() {
-            this.foiZgrada.opremanjeMjesta();
-
-            return this;
-
-        }
-
         public ToF build() {
             return new ToF(this);
         }
 
+    }
+
+    public void pokreniProgram() {
+       // MVC fore
     }
 
     public void radiProvjere() {

@@ -63,7 +63,6 @@ public class ToFview {
     }
 
     public static void prikazi(String tekst, String type) {
-        boolean novaStranica = false;
         switch (type) {
             case "info":
                 System.out.print(ANSI_ESC + "37m");

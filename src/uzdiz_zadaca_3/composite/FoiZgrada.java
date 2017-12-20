@@ -213,29 +213,6 @@ public class FoiZgrada implements Foi {
         return true;
     }
 
-    public void postaviUredjaje() {
-        FoiFactory factory = new UredjajFactory();
-        for (Mjesto m : this.mjesta) {
-            ToFview.prikazi("Postavljam uredjaje za " + m.naziv, "title");
-
-            for (int i = 0; i < m.brojSenzora; i++) {
-                m.addUredjaj(factory.kreirajUredjaj(true, m.tip));
-            }
-
-            for (int i = 0; i < m.brojAktuatora; i++) {
-                m.addUredjaj(factory.kreirajUredjaj(false, m.tip));
-            }
-        }
-    }
-
-    public void opremanjeMjesta() {
-        FoiIterator iterator = this.createIterator();
-        while (iterator.hasNext()) {
-            Mjesto m = (Mjesto) iterator.next();
-            ToFview.prikazi("Opremam mjesto " + m.id + " " + m.naziv, "title");
-            m.opremanjeMjesta();
-        }
-    }
 
     public void stanjeUredjaja() {
 

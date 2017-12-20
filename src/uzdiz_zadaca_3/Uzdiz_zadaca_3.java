@@ -21,7 +21,7 @@ public class Uzdiz_zadaca_3 {
     public static void main(String[] args) {
         if (Params.checkArgs(args)) {
             ToF tof = new ToF.Builder()
-                    .inicijalizirajSucelje()
+                    // sucelje se inicijalizira odma kod kreiranja buildera
                     .kreirajMjesta()
                     .ucitajModeleUredjaja()
                     .ucitajraspored()
