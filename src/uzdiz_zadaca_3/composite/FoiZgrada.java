@@ -213,7 +213,6 @@ public class FoiZgrada implements Foi {
         return true;
     }
 
-
     public void stanjeUredjaja() {
 
         FoiIterator iterator = this.createIterator();
@@ -229,14 +228,13 @@ public class FoiZgrada implements Foi {
 
     }
 
-    public void statistika() {
+    public List<Statistika> statistika() {
+        List<Statistika> stat = new ArrayList<>();
         for (Mjesto mjesto : this.mjesta) {
-            MainView.prikazi("Statistika za " + mjesto.naziv, "info");
-            for (Map.Entry<String, Integer> entry : mjesto.statistikaMjesta.entrySet()) {
-                MainView.prikazi(entry.getKey() + ": " + entry.getValue(), "info");
-            }
-
+            stat.add(mjesto.stat);
         }
+
+        return stat;
     }
 
 }

@@ -134,5 +134,9 @@ public class Params {
 
         return status;
     }
+    
+    public static void setPi(int i){
+        params.put("-pi", i);
+    }
 
 }

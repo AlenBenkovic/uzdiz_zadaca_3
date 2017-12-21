@@ -14,6 +14,7 @@ import uzdiz_zadaca_3.composite.Mjesto;
 import uzdiz_zadaca_3.composite.Senzor;
 import static uzdiz_zadaca_3.mvc.MainView.prikazi;
 import static uzdiz_zadaca_3.mvc.MainView.unos;
+import uzdiz_zadaca_3.utils.Params;
 
 /**
  *
@@ -104,7 +105,11 @@ public class MainController {
                     view.prikazi("Neispravan format ID-a", "warning");
                 }
             } else if (in.equals("S")) {
-                view.prikazi("Stat", "info");
+                MjestoView mv = new MjestoView();
+                for(Mjesto m : zgrada.getMjesta()){
+                    mv.prikazStatistike(m.stat);
+                }
+                
             } else if (in.equals("SP")) {
                 view.prikazi("SP", "info");
             } else if (in.equals("VP")) {
@@ -114,6 +119,7 @@ public class MainController {
                     int n = Integer.parseInt(ulaz[1]);
                     if (n >= 1 && n <= 100) {
                         view.prikazi("C n", "info");
+                        
                     } else {
                         view.prikazi("Broj mora biti u rasponu od 1 do 100", "warning");
                     }
@@ -126,7 +132,8 @@ public class MainController {
                 try {
                     int n = Integer.parseInt(ulaz[1]);
                     if (n >= 0 && n <= 100) {
-                        view.prikazi("PI", "info");
+                        Params.setPi(n);
+                        view.prikazi("Prosjecni % ispravnosti uredjaja pohranjen.", "info");
                     } else {
                         view.prikazi("Broj mora biti u rasponu od 0 do 100", "warning");
                     }
