@@ -5,6 +5,7 @@
  */
 package uzdiz_zadaca_3.composite;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import uzdiz_zadaca_3.iterator.FoiIterator;
@@ -16,7 +17,7 @@ import uzdiz_zadaca_3.utils.RandomNumber;
  *
  * @author abenkovic
  */
-public class Mjesto implements Foi {
+public class Mjesto implements Foi, Serializable {
 
     public final String naziv;
     public final int tip;

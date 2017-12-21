@@ -5,7 +5,7 @@
  */
 package uzdiz_zadaca_3.composite;
 
-import uzdiz_zadaca_3.logs.FoiLogger;
+import java.io.Serializable;
 import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.utils.Params;
 import uzdiz_zadaca_3.utils.RandomNumber;
@@ -16,7 +16,7 @@ import uzdiz_zadaca_3.visitor.Visitor;
  *
  * @author abenkovic
  */
-public abstract class Uredjaj implements Foi, Visitable {
+public abstract class Uredjaj implements Foi, Visitable, Serializable {
 
     public String naziv;
     public int tip;
@@ -31,7 +31,6 @@ public abstract class Uredjaj implements Foi, Visitable {
     public boolean onemogucen = false;
     public int neuspjesneProvjere = 0;
 
-    FoiLogger logger = FoiLogger.getInstance();
 
     public Uredjaj(int id, String naziv, int tip, int vrsta, float min, float max, String komentar) {
         this.naziv = naziv;

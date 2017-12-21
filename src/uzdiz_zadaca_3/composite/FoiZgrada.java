@@ -8,9 +8,9 @@ package uzdiz_zadaca_3.composite;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import uzdiz_zadaca_3.factory.FoiFactory;
 import uzdiz_zadaca_3.factory.UredjajFactory;
 import uzdiz_zadaca_3.iterator.MjestoIterator;
@@ -23,7 +23,7 @@ import uzdiz_zadaca_3.visitor.UredjajVisitor;
  *
  * @author abenkovic
  */
-public class FoiZgrada implements Foi {
+public class FoiZgrada implements Foi, Serializable {
 
     private List<Mjesto> mjesta = new ArrayList<>();
     private List<Uredjaj> uredjajModeli = new ArrayList<>();

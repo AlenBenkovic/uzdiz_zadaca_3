@@ -5,6 +5,13 @@
  */
 package uzdiz_zadaca_3.mvc;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -22,7 +29,7 @@ import uzdiz_zadaca_3.utils.Params;
  */
 public class MainController {
 
-    private final FoiZgrada zgrada;
+    private FoiZgrada zgrada;
     private final MainView view;
 
     public MainController(FoiZgrada zgrada, MainView view) {
@@ -106,20 +113,44 @@ public class MainController {
                 }
             } else if (in.equals("S")) {
                 MjestoView mv = new MjestoView();
-                for(Mjesto m : zgrada.getMjesta()){
+                for (Mjesto m : zgrada.getMjesta()) {
                     mv.prikazStatistike(m.stat);
                 }
-                
+
             } else if (in.equals("SP")) {
-                view.prikazi("SP", "info");
+
+                ObjectOutputStream oos;
+                try {
+                    oos = new ObjectOutputStream(
+                            new FileOutputStream(new File("zgrada.foi")));
+                    oos.writeObject(zgrada);
+                    oos.close();
+                    view.prikazi("Podaci uspjesno spremljeni.", "info");
+
+                } catch (IOException ex) {
+                    view.prikazi("Greska prilikom spremanja podataka: " + ex.toString(), "warning");
+                }
+
             } else if (in.equals("VP")) {
-                view.prikazi("VP", "info");
+
+                try {
+                    FileInputStream fileIn;
+                    fileIn = new FileInputStream("zgrada.foi");
+                    ObjectInputStream input = new ObjectInputStream(fileIn);
+                    this.zgrada = (FoiZgrada) input.readObject();
+                    view.prikazi("Podaci su uspjesno ucitani.", "info");
+                } catch (FileNotFoundException ex) {
+                    view.prikazi("Ne postoje spremljeni podaci!", "warning");
+                } catch (ClassNotFoundException | IOException ex) {
+                    view.prikazi("Greska prilikom ucitavanja podataka: " + ex.toString(), "warning");
+                }
+
             } else if (ulaz[0].equals("C") && ulaz.length > 1) {
                 try {
                     int n = Integer.parseInt(ulaz[1]);
                     if (n >= 1 && n <= 100) {
                         view.prikazi("C n", "info");
-                        
+
                     } else {
                         view.prikazi("Broj mora biti u rasponu od 1 do 100", "warning");
                     }

@@ -5,11 +5,13 @@
  */
 package uzdiz_zadaca_3.composite;
 
+import java.io.Serializable;
+
 /**
  *
  * @author abenkovic
  */
-public class Statistika {
+public class Statistika implements Serializable{
 
     public String nazivMjesta;
     public int idMjesta;
