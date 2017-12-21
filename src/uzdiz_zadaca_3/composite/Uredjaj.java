@@ -31,7 +31,6 @@ public abstract class Uredjaj implements Foi, Visitable, Serializable {
     public boolean onemogucen = false;
     public int neuspjesneProvjere = 0;
 
-
     public Uredjaj(int id, String naziv, int tip, int vrsta, float min, float max, String komentar) {
         this.naziv = naziv;
         this.tip = tip;
@@ -48,31 +47,30 @@ public abstract class Uredjaj implements Foi, Visitable, Serializable {
         this.status = this.status();
         float staraVrijednost = this.vrijednost;
         this.vrijednost = this.kreirajVrijednost();
-        if(this instanceof Senzor){
-            Senzor s = (Senzor)this;
-            if(staraVrijednost != vrijednost){
+        if (this instanceof Senzor) {
+            Senzor s = (Senzor) this;
+            if (staraVrijednost != vrijednost) {
                 s.setImaNovuVrijednost(true);
             }
         }
-        
+
         if (this.status < 1) {
             this.neuspjesneProvjere++;
             if (this.neuspjesneProvjere > 2) {
                 this.onemogucen = true;
             }
         }
-        
+
         String poruka = "\nUredjaj: " + this.id + " " + this.naziv
                 + "\nStatus: " + status + " (neuspjesne provjere: " + this.neuspjesneProvjere + ")";
-        
-        if(status > 0){
+
+        if (status > 0) {
             poruka = poruka + "\nVrijednost: " + this.formatVrijednost(this.vrijednost);
             MainView.prikazi(poruka, "info");
         } else {
             poruka = poruka + "\nVrijednost: " + "nepoznato";
             MainView.prikazi(poruka, "warning");
         }
-        
 
         return !this.onemogucen;
 
@@ -98,13 +96,12 @@ public abstract class Uredjaj implements Foi, Visitable, Serializable {
             case 2:
                 return RandomNumber.dajSlucajniBroj(this.min, this.max);
             case 3:
-                return RandomNumber.dajSlucajniBroj((int)this.min, (int)this.max);
+                return RandomNumber.dajSlucajniBroj((int) this.min, (int) this.max);
         }
         return 0;
 
     }
 
-    
     public String formatVrijednost(float v) {
         switch (this.vrsta) {
             case 0:
@@ -118,10 +115,14 @@ public abstract class Uredjaj implements Foi, Visitable, Serializable {
         }
         return "nema";
     }
-    
+
     @Override
     public float accept(Visitor visitor) {
         return visitor.visit(this);
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
 }
