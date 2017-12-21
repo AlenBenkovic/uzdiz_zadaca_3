@@ -182,7 +182,7 @@ public class FoiZgrada implements Foi {
         return null;
     }
 
-    private Mjesto dohvatiMjesto(int id) {
+    public Mjesto dohvatiMjesto(int id) {
         for (Mjesto mjesto : mjesta) {
             if (mjesto.id == id) {
                 return mjesto;
@@ -191,7 +191,7 @@ public class FoiZgrada implements Foi {
         return null;
     }
 
-    private Uredjaj dohvatiUredjaj(int id) {
+    public Uredjaj dohvatiUredjaj(int id) {
         for (Mjesto mjesto : mjesta) {
             for (Uredjaj u : mjesto.getUredjaji()) {
                 if (u.id == id) {

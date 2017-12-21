@@ -6,6 +6,8 @@
 package uzdiz_zadaca_3.builder;
 
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import uzdiz_zadaca_3.composite.FoiZgrada;
 import uzdiz_zadaca_3.factory.FoiFactory;
 import uzdiz_zadaca_3.factory.MjestoFactory;
@@ -71,6 +73,7 @@ public class ToF {
     }
 
     public void pokreniProgram() {
+        MainView.pressAnyKey();
         MainView view = new MainView();
         MainController controller = new MainController(foiZgrada, view);
         controller.prikaziNaredbe();

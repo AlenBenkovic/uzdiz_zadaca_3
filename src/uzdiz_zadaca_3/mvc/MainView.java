@@ -28,9 +28,9 @@ public class MainView {
     }
 
     public void cleanScreen() {
-        
+
         x = 1;
-        y= 0;
+        y = 0;
         System.out.print("\033" + "c");
     }
 
@@ -89,27 +89,8 @@ public class MainView {
             }
 
             if (x == X_MAX) {
-                System.out.print(x + " - " + X_MAX);
-                boolean status = false;
-
-                while (!status) {
-                    System.out.print(ANSI_ESC + "0m");
-
-                    unos("Pritisnite n/N za nastavak...");
-                    Scanner scanner = new Scanner(System.in);
-                    String in = scanner.nextLine();
-
-                    if (in.toLowerCase().compareTo("n") == 0) {
-                        status = true;
-
-                    } else {
-                        System.out.print(ANSI_ESC + "2K");
-                    }
-                }
-
-                System.out.print("\033" + "c"); // clean screen
-                postavi(1, 1, false);
-
+                
+                pressAnyKey();
             }
 
             System.out.print(tekst.charAt(i));
@@ -121,7 +102,28 @@ public class MainView {
         System.out.print(ANSI_ESC + "0m");
 
     }
-    
-    
+
+    public static void pressAnyKey() {
+        boolean status = false;
+
+        while (!status) {
+            System.out.print(ANSI_ESC + "0m");
+
+            unos("Pritisnite n/N za nastavak...");
+            Scanner scanner = new Scanner(System.in);
+            String in = scanner.nextLine();
+
+            if (in.toLowerCase().compareTo("n") == 0) {
+                status = true;
+
+            } else {
+                System.out.print(ANSI_ESC + "2K");
+            }
+        }
+
+        System.out.print("\033" + "c"); // clean screen
+        postavi(1, 1, false);
+
+    }
 
 }

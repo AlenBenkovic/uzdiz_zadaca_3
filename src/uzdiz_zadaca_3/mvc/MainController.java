@@ -6,7 +6,12 @@
 package uzdiz_zadaca_3.mvc;
 
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import uzdiz_zadaca_3.composite.Aktuator;
 import uzdiz_zadaca_3.composite.FoiZgrada;
+import uzdiz_zadaca_3.composite.Mjesto;
+import uzdiz_zadaca_3.composite.Senzor;
 import static uzdiz_zadaca_3.mvc.MainView.prikazi;
 import static uzdiz_zadaca_3.mvc.MainView.unos;
 
@@ -51,14 +56,30 @@ public class MainController {
             } else if (ulaz[0].equals("M") && ulaz.length > 1) {
                 try {
                     int id = Integer.parseInt(ulaz[1]);
-                    view.prikazi("Mjesto " + ulaz[1], "info");
+                    Mjesto m = this.zgrada.dohvatiMjesto(id);
+                    if (m != null) {
+
+                    } else {
+                        view.prikazi("Ne postoji mjesto sa ID-om " + id, "warning");
+                    }
                 } catch (NumberFormatException e) {
                     view.prikazi("Neispravan format ID-a", "warning");
                 }
             } else if (ulaz[0].equals("S") && ulaz.length > 1) {
                 try {
                     int id = Integer.parseInt(ulaz[1]);
-                    view.prikazi("SSS", "info");
+                    try {
+                        Senzor s = (Senzor) zgrada.dohvatiUredjaj(id);
+                        if (s != null) {
+                            UredjajView uv = new UredjajView();
+                            uv.ispisSenzora(s);
+                        } else {
+                            view.prikazi("Ne postoji senzor sa ID-om " + id, "warning");
+                        }
+                    } catch (ClassCastException e) {
+                        view.prikazi("Trazeni uredjaj nije senzor!", "warning");
+                    }
+
                 } catch (NumberFormatException e) {
                     view.prikazi("Neispravan format ID-a", "warning");
                 }
@@ -66,7 +87,17 @@ public class MainController {
 
                 try {
                     int id = Integer.parseInt(ulaz[1]);
-                    view.prikazi("AAA", "info");
+                    try {
+                        Aktuator a = (Aktuator) zgrada.dohvatiUredjaj(id);
+                        if (a != null) {
+
+                        } else {
+                            view.prikazi("Ne postoji aktuator sa ID-om " + id, "warning");
+                        }
+                    } catch (ClassCastException e) {
+                        view.prikazi("Trazeni uredjaj nije aktuator!", "warning");
+                    }
+
                 } catch (NumberFormatException e) {
                     view.prikazi("Neispravan format ID-a", "warning");
                 }
