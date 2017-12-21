@@ -8,6 +8,7 @@ package uzdiz_zadaca_3.composite;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import uzdiz_zadaca_3.iterator.AlgoritamSlijedno;
 import uzdiz_zadaca_3.iterator.FoiIterator;
 import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.utils.Params;
@@ -45,9 +46,11 @@ public class Mjesto implements Foi, Serializable {
     public boolean provjera() {
         try {
 
-            // kreiram iterator klase X na temelju korisnickog unosa
+            /* kreiram iterator klase X na temelju korisnickog unosa
             FoiIterator iterator = (FoiIterator) Class.forName(Params.params.get("-alg").toString())
-                    .getConstructor(List.class).newInstance(this.uredjaji);
+                    .getConstructor(List.class).newInstance(this.uredjaji);*/
+            
+            FoiIterator iterator = new AlgoritamSlijedno(uredjaji);
 
             while (iterator.hasNext()) {
                 Uredjaj u = (Uredjaj) iterator.next();

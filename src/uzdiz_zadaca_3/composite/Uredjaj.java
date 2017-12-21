@@ -62,7 +62,7 @@ public abstract class Uredjaj implements Foi, Visitable, Serializable {
             }
         }
         
-        String poruka = "\n-----------\nUredjaj: " + this.id + " " + this.naziv
+        String poruka = "\nUredjaj: " + this.id + " " + this.naziv
                 + "\nStatus: " + status + " (neuspjesne provjere: " + this.neuspjesneProvjere + ")";
         
         if(status > 0){

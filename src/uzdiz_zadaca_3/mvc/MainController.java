@@ -149,8 +149,7 @@ public class MainController {
                 try {
                     int n = Integer.parseInt(ulaz[1]);
                     if (n >= 1 && n <= 100) {
-                        view.prikazi("C n", "info");
-
+                        this.radiProvjere(Integer.parseInt(ulaz[1]));
                     } else {
                         view.prikazi("Broj mora biti u rasponu od 1 do 100", "warning");
                     }
@@ -177,10 +176,27 @@ public class MainController {
         }
     }
 
-    private boolean provjeraNaredbe(String ulaz) {
-        String[] naredbe = ulaz.split(" ");
+    public void radiProvjere(int brojCiklusa) {
+        view.prikazi("RADIM PROVJERE", "title");
+        Runnable dretva = () -> {
+            int i = 0;
+            while (i < brojCiklusa) {
+                try {
+                    i++;
+                    Thread.sleep(Integer.parseInt(Params.params.get("-tcd").toString()) * 1000);
 
-        return true;
+                    this.zgrada.provjera();
+
+                } catch (InterruptedException ex) {
+                    MainView.prikazi("Problem u radu sa dretvom", "warning");
+                }
+
+            }
+            this.zgrada.statistika();
+        };
+
+        new Thread(dretva).start();
+
     }
 
 }
