@@ -44,14 +44,72 @@ public class MainController {
             unos("Unesite naredbu: ");
             Scanner scanner = new Scanner(System.in);
             String in = scanner.nextLine();
+            String[] ulaz = in.split(" ");
 
             if (in.compareTo("I") == 0) {
                 status = true;
+            } else if (ulaz[0].equals("M") && ulaz.length > 1) {
+                try {
+                    int id = Integer.parseInt(ulaz[1]);
+                    view.prikazi("Mjesto " + ulaz[1], "info");
+                } catch (NumberFormatException e) {
+                    view.prikazi("Neispravan format ID-a", "warning");
+                }
+            } else if (ulaz[0].equals("S") && ulaz.length > 1) {
+                try {
+                    int id = Integer.parseInt(ulaz[1]);
+                    view.prikazi("SSS", "info");
+                } catch (NumberFormatException e) {
+                    view.prikazi("Neispravan format ID-a", "warning");
+                }
+            } else if (ulaz[0].equals("A") && ulaz.length > 1) {
 
+                try {
+                    int id = Integer.parseInt(ulaz[1]);
+                    view.prikazi("AAA", "info");
+                } catch (NumberFormatException e) {
+                    view.prikazi("Neispravan format ID-a", "warning");
+                }
+            } else if (in.equals("S")) {
+                view.prikazi("Stat", "info");
+            } else if (in.equals("SP")) {
+                view.prikazi("SP", "info");
+            } else if (in.equals("VP")) {
+                view.prikazi("VP", "info");
+            } else if (ulaz[0].equals("C") && ulaz.length > 1) {
+                try {
+                    int n = Integer.parseInt(ulaz[1]);
+                    if (n >= 1 && n <= 100) {
+                        view.prikazi("C n", "info");
+                    } else {
+                        view.prikazi("Broj mora biti u rasponu od 1 do 100", "warning");
+                    }
+                } catch (NumberFormatException e) {
+                    view.prikazi("Neispravan format broja", "warning");
+                }
+            } else if (in.equals("VF")) {
+                view.prikazi("VF", "info");
+            } else if (ulaz[0].equals("PI") && ulaz.length > 1) {
+                try {
+                    int n = Integer.parseInt(ulaz[1]);
+                    if (n >= 0 && n <= 100) {
+                        view.prikazi("PI", "info");
+                    } else {
+                        view.prikazi("Broj mora biti u rasponu od 0 do 100", "warning");
+                    }
+                } catch (NumberFormatException e) {
+                    view.prikazi("Neispravan format broja", "warning");
+                }
             } else {
                 MainView.cleanLine();
             }
         }
+    }
+
+    private boolean provjeraNaredbe(String ulaz) {
+        String[] naredbe = ulaz.split(" ");
+
+        return true;
     }
 
 }
