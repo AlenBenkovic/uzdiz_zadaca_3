@@ -90,7 +90,8 @@ public class MainController {
                     try {
                         Aktuator a = (Aktuator) zgrada.dohvatiUredjaj(id);
                         if (a != null) {
-
+                            UredjajView uv = new UredjajView();
+                            uv.ispisAktuatora(a);
                         } else {
                             view.prikazi("Ne postoji aktuator sa ID-om " + id, "warning");
                         }

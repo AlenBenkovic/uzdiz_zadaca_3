@@ -89,7 +89,6 @@ public class MainView {
             }
 
             if (x == X_MAX) {
-                
                 pressAnyKey();
             }
 
