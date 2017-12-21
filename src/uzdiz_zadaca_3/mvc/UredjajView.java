@@ -18,7 +18,6 @@ public class UredjajView extends MainView {
         super.cleanScreen();
         super.prikazi("PRIKAZ SENZORA " + s.id + " " + s.naziv, "title");
         super.prikazi("", "info");
-        super.prikazi(String.format("%-35s %15s", "Naziv uredjaja:", s.naziv), "info");
         super.prikazi(String.format("%-35s %15s", "ID uredjaja:", String.valueOf(s.id)), "info");
         super.prikazi(String.format("%-35s %15s", "Min. vrijednost:", s.min), "info");
         super.prikazi(String.format("%-35s %15s", "Maks. vrijednost:", s.max), "info");
@@ -41,7 +40,6 @@ public class UredjajView extends MainView {
         super.cleanScreen();
         super.prikazi("PRIKAZ AKTUATORA " + a.id + " " + a.naziv, "title");
         super.prikazi("", "info");
-        super.prikazi(String.format("%-35s %15s", "Naziv uredjaja:", a.naziv), "info");
         super.prikazi(String.format("%-35s %15s", "ID uredjaja:", String.valueOf(a.id)), "info");
         super.prikazi(String.format("%-35s %15s", "Min. vrijednost:", a.min), "info");
         super.prikazi(String.format("%-35s %15s", "Maks. vrijednost:", a.max), "info");

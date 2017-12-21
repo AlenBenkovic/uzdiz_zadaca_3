@@ -58,7 +58,8 @@ public class MainController {
                     int id = Integer.parseInt(ulaz[1]);
                     Mjesto m = this.zgrada.dohvatiMjesto(id);
                     if (m != null) {
-
+                        MjestoView mv = new MjestoView();
+                        mv.ispisMjesta(m);
                     } else {
                         view.prikazi("Ne postoji mjesto sa ID-om " + id, "warning");
                     }
