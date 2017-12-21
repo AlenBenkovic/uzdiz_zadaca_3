@@ -9,6 +9,7 @@ import java.util.Scanner;
 import uzdiz_zadaca_3.composite.FoiZgrada;
 import uzdiz_zadaca_3.factory.FoiFactory;
 import uzdiz_zadaca_3.factory.MjestoFactory;
+import uzdiz_zadaca_3.mvc.MainController;
 import uzdiz_zadaca_3.mvc.MainView;
 import static uzdiz_zadaca_3.mvc.MainView.ANSI_ESC;
 import static uzdiz_zadaca_3.mvc.MainView.unos;
@@ -70,20 +71,10 @@ public class ToF {
     }
 
     public void pokreniProgram() {
-        MainView.prikaziNaredbe();
-        boolean status = false;
-        while (!status) {
-            unos("Unesite naredbu: ");
-            Scanner scanner = new Scanner(System.in);
-            String in = scanner.nextLine();
-
-            if (in.compareTo("I") == 0) {
-                status = true;
-
-            } else {
-                MainView.cleanLine();
-            }
-        }
+        MainView view = new MainView();
+        MainController controller = new MainController(foiZgrada, view);
+        controller.prikaziNaredbe();
+        controller.cekajNaredbu();
     }
 
     public void radiProvjere() {

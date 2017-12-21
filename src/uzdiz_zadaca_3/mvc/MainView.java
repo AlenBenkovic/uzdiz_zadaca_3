@@ -27,7 +27,7 @@ public class MainView {
         cleanScreen();
     }
 
-    public static void cleanScreen() {
+    public void cleanScreen() {
         
         x = 1;
         y= 0;
@@ -122,18 +122,6 @@ public class MainView {
 
     }
     
-    public static void prikaziNaredbe(){
-        cleanScreen();
-        prikazi("M x - ispis podataka mjesta x", "info");
-        prikazi("S x - ispis podataka senzora x", "info");
-        prikazi("A x - ispis podataka aktuatora x", "info");
-        prikazi("S - ispis statistike", "info");
-        prikazi("SP - spremi podatke (mjesta, uređaja)", "info");
-        prikazi("VP - vrati spremljene podatke (mjesta, uređaja)", "info");
-        prikazi("C n - izvršavanje n ciklusa dretve (1-100)", "info");
-        prikazi("VF - izvršavanje vlastite funkcionalnosti", "info");
-        prikazi("PI n - prosječni % ispravnosti uređaja (0-100)", "info");
-        prikazi("I - izlaz.", "info");
-    }
+    
 
 }
