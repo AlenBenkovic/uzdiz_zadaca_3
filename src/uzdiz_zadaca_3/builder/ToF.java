@@ -9,9 +9,9 @@ import java.util.Scanner;
 import uzdiz_zadaca_3.composite.FoiZgrada;
 import uzdiz_zadaca_3.factory.FoiFactory;
 import uzdiz_zadaca_3.factory.MjestoFactory;
-import uzdiz_zadaca_3.mvc.ToFview;
-import static uzdiz_zadaca_3.mvc.ToFview.ANSI_ESC;
-import static uzdiz_zadaca_3.mvc.ToFview.unos;
+import uzdiz_zadaca_3.mvc.MainView;
+import static uzdiz_zadaca_3.mvc.MainView.ANSI_ESC;
+import static uzdiz_zadaca_3.mvc.MainView.unos;
 import uzdiz_zadaca_3.utils.Params;
 
 /**
@@ -21,7 +21,7 @@ import uzdiz_zadaca_3.utils.Params;
 public class ToF {
 
     private final FoiZgrada foiZgrada;
-    private final ToFview view;
+    private final MainView view;
 
     public ToF(Builder builder) {
         this.foiZgrada = builder.foiZgrada;
@@ -31,7 +31,7 @@ public class ToF {
     public static class Builder {
 
         private final FoiZgrada foiZgrada = new FoiZgrada();
-        private final ToFview view = new ToFview();
+        private final MainView view = new MainView();
 
         public Builder() {
             // this.logger.init(Params.params.get("-i").toString(), Integer.parseInt(Params.params.get("-brl").toString()));
@@ -70,7 +70,20 @@ public class ToF {
     }
 
     public void pokreniProgram() {
-       // MVC fore
+        MainView.prikaziNaredbe();
+        boolean status = false;
+        while (!status) {
+            unos("Unesite naredbu: ");
+            Scanner scanner = new Scanner(System.in);
+            String in = scanner.nextLine();
+
+            if (in.compareTo("I") == 0) {
+                status = true;
+
+            } else {
+                MainView.cleanLine();
+            }
+        }
     }
 
     public void radiProvjere() {
@@ -85,7 +98,7 @@ public class ToF {
                     this.foiZgrada.stanjeUredjaja();
 
                 } catch (InterruptedException ex) {
-                    ToFview.prikazi("Problem u radu sa dretvom", "warning");
+                    MainView.prikazi("Problem u radu sa dretvom", "warning");
                 }
 
             }

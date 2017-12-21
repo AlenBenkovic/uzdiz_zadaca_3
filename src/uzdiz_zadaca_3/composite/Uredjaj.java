@@ -6,7 +6,7 @@
 package uzdiz_zadaca_3.composite;
 
 import uzdiz_zadaca_3.logs.FoiLogger;
-import uzdiz_zadaca_3.mvc.ToFview;
+import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.utils.Params;
 import uzdiz_zadaca_3.utils.RandomNumber;
 import uzdiz_zadaca_3.visitor.Visitable;
@@ -68,10 +68,10 @@ public abstract class Uredjaj implements Foi, Visitable {
         
         if(status > 0){
             poruka = poruka + "\nVrijednost: " + this.formatVrijednost(this.vrijednost);
-            ToFview.prikazi(poruka, "info");
+            MainView.prikazi(poruka, "info");
         } else {
             poruka = poruka + "\nVrijednost: " + "nepoznato";
-            ToFview.prikazi(poruka, "warning");
+            MainView.prikazi(poruka, "warning");
         }
         
 

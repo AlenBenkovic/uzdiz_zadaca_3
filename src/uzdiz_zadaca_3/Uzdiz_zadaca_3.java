@@ -6,7 +6,7 @@
 package uzdiz_zadaca_3;
 
 import uzdiz_zadaca_3.builder.ToF;
-import uzdiz_zadaca_3.mvc.ToFview;
+import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.utils.Params;
 
 /**
@@ -28,10 +28,11 @@ public class Uzdiz_zadaca_3 {
                     .inicijalizacija()
                     .build();
             
+            tof.pokreniProgram();
             //tof.radiProvjere();
             
         } else {
-            ToFview.prikazi("Parametri nisu ispravni!", "warning");
+            MainView.prikazi("Parametri nisu ispravni!", "warning");
             System.exit(0);
         }
     }

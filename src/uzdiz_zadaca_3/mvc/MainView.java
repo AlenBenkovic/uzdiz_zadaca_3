@@ -12,7 +12,7 @@ import uzdiz_zadaca_3.utils.Params;
  *
  * @author abenkovic
  */
-public class ToFview {
+public class MainView {
 
     public static final String ANSI_ESC = "\033[";
     private static int x = 1;
@@ -23,13 +23,19 @@ public class ToFview {
     private static int unos_x = X_MAX + 1;
     private static int unos_y = 0;
 
-    public ToFview() {
-        ekran();
+    public MainView() {
+        cleanScreen();
     }
 
-    private void ekran() {
-        System.out.print("\033" + "c"); // clean screen
+    public static void cleanScreen() {
+        
+        x = 1;
+        y= 0;
+        System.out.print("\033" + "c");
+    }
 
+    public static void cleanLine() {
+        System.out.print(ANSI_ESC + "2K");
     }
 
     public static void postavi(int j, int k, boolean isC) {
@@ -114,6 +120,20 @@ public class ToFview {
         postavi(x + 1, 0, false);
         System.out.print(ANSI_ESC + "0m");
 
+    }
+    
+    public static void prikaziNaredbe(){
+        cleanScreen();
+        prikazi("M x - ispis podataka mjesta x", "info");
+        prikazi("S x - ispis podataka senzora x", "info");
+        prikazi("A x - ispis podataka aktuatora x", "info");
+        prikazi("S - ispis statistike", "info");
+        prikazi("SP - spremi podatke (mjesta, uređaja)", "info");
+        prikazi("VP - vrati spremljene podatke (mjesta, uređaja)", "info");
+        prikazi("C n - izvršavanje n ciklusa dretve (1-100)", "info");
+        prikazi("VF - izvršavanje vlastite funkcionalnosti", "info");
+        prikazi("PI n - prosječni % ispravnosti uređaja (0-100)", "info");
+        prikazi("I - izlaz.", "info");
     }
 
 }

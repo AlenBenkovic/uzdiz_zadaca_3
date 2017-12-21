@@ -7,7 +7,7 @@ package uzdiz_zadaca_3.composite;
 
 import java.util.ArrayList;
 import java.util.List;
-import uzdiz_zadaca_3.mvc.ToFview;
+import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.visitor.Visitable;
 import uzdiz_zadaca_3.visitor.Visitor;
 
@@ -49,7 +49,7 @@ public class Senzor extends Uredjaj implements Foi, Visitable {
         for (Aktuator a : this.aktuatori) {
             poruka = poruka + "\n>" + a.id + " " + a.naziv;
         }
-        ToFview.prikazi(poruka, "info");
+        MainView.prikazi(poruka, "info");
     }
 
     @Override

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import uzdiz_zadaca_3.iterator.FoiIterator;
-import uzdiz_zadaca_3.mvc.ToFview;
+import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.utils.Params;
 import uzdiz_zadaca_3.utils.RandomNumber;
 
@@ -59,7 +59,7 @@ public class Mjesto implements Foi {
             while (iterator.hasNext()) {
                 Uredjaj u = (Uredjaj) iterator.next();
                 if (!u.provjera()) { // ako provjera nije uspjela
-                    ToFview.prikazi("Radim zamjenu uredjaja", "warning");
+                    MainView.prikazi("Radim zamjenu uredjaja", "warning");
                     this.uredjaji.add(u.zamjena());
                     this.uredjaji.remove(u);
                     if (u instanceof Senzor) {
@@ -89,7 +89,7 @@ public class Mjesto implements Foi {
                 }
             }
         } catch (Exception e) {
-            ToFview.prikazi("Greska prilikom ucitavanja klase: " + e.getMessage(), "warning");
+            MainView.prikazi("Greska prilikom ucitavanja klase: " + e.getMessage(), "warning");
         }
 
         return true;
@@ -137,7 +137,7 @@ public class Mjesto implements Foi {
         ArrayList<Uredjaj> neispravniUredjaji = new ArrayList<>();
         for (Uredjaj uredjaj : this.uredjaji) {
             if (!uredjaj.inicijalizacija()) {
-                ToFview.prikazi(uredjaj.naziv + " [0]", "warning");
+                MainView.prikazi(uredjaj.naziv + " [0]", "warning");
                 neispravniUredjaji.add(uredjaj);
                 if (uredjaj instanceof Senzor) {
                     int tmp = this.statistikaMjesta.get("Broj senzora koji nisu prošli inicijalizaciju");
@@ -147,7 +147,7 @@ public class Mjesto implements Foi {
                     this.statistikaMjesta.put("Broj aktuatora koji nisu prošli inicijalizaciju", tmp + 1);
                 }
             } else {
-                ToFview.prikazi(uredjaj.naziv + " [1]", "info");
+                MainView.prikazi(uredjaj.naziv + " [1]", "info");
             }
         }
 
@@ -184,7 +184,7 @@ public class Mjesto implements Foi {
                         }
 
                     } catch (Exception e) {
-                        ToFview.prikazi("Greska kod dodjele senzora: " + e.toString(), "warning");
+                        MainView.prikazi("Greska kod dodjele senzora: " + e.toString(), "warning");
                     }
 
                 }

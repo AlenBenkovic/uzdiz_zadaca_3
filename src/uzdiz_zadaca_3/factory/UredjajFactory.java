@@ -13,7 +13,7 @@ import java.util.List;
 import uzdiz_zadaca_3.composite.Aktuator;
 import uzdiz_zadaca_3.composite.Senzor;
 import uzdiz_zadaca_3.composite.Uredjaj;
-import uzdiz_zadaca_3.mvc.ToFview;
+import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.utils.Params;
 import uzdiz_zadaca_3.utils.RandomNumber;
 
@@ -79,27 +79,27 @@ public class UredjajFactory extends FoiFactory {
                             // this.popisAktuatora.add(podatak);
                         }
                     } else {
-                        ToFview.prikazi("Model uredjaja sa ID " + podatak[0] + " vec postoji.", "warning");
+                        MainView.prikazi("Model uredjaja sa ID " + podatak[0] + " vec postoji.", "warning");
                     }
 
                 } else {
-                    ToFview.prikazi("Format zapisa za " + podatak[1] + " nije valjan.", "warning");
+                    MainView.prikazi("Format zapisa za " + podatak[1] + " nije valjan.", "warning");
                 }
             }
         } catch (IOException e) {
-            ToFview.prikazi("Greska prilikom citanja datoteke: " + e.toString(), "warning");
+            MainView.prikazi("Greska prilikom citanja datoteke: " + e.toString(), "warning");
         }
         
         return uredjajModeli;
     }
 
     public Senzor kreirajSenzor(String[] senzor) {
-        ToFview.prikazi("[Senzor] " + senzor[0] + " - " + senzor[1], "info");
+        MainView.prikazi("[Senzor] " + senzor[0] + " - " + senzor[1], "info");
         return new Senzor(Integer.parseInt(senzor[0]), senzor[1], Integer.parseInt(senzor[2]), Integer.parseInt(senzor[3]), Float.parseFloat(senzor[4]), Float.parseFloat(senzor[5]), senzor.length == 6 ? "-" : senzor[6]);
     }
 
     public Aktuator kreirajAktuator(String[] aktuator) {
-        ToFview.prikazi("[Aktuator] " + aktuator[0] + " - " + aktuator[1], "info");
+        MainView.prikazi("[Aktuator] " + aktuator[0] + " - " + aktuator[1], "info");
         return new Aktuator(Integer.parseInt(aktuator[0]), aktuator[1], Integer.parseInt(aktuator[2]), Integer.parseInt(aktuator[3]), Float.parseFloat(aktuator[4]), Float.parseFloat(aktuator[5]), aktuator.length == 6 ? "-" : aktuator[6]);
     }
 

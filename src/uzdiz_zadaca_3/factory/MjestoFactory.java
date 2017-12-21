@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import uzdiz_zadaca_3.composite.Mjesto;
-import uzdiz_zadaca_3.mvc.ToFview;
+import uzdiz_zadaca_3.mvc.MainView;
 
 /**
  *
@@ -44,11 +44,11 @@ public class MjestoFactory extends FoiFactory {
 
                     if (postojiMjesto(Integer.parseInt(podatak[0]), mjesta)) {
 
-                        ToFview.prikazi("Mjesto " + podatak[1] + " već postoji.", "warning");
+                        MainView.prikazi("Mjesto " + podatak[1] + " već postoji.", "warning");
 
                     } else {
 
-                        ToFview.prikazi("Kreiram mjesto " + podatak[1] + " .", "info");
+                        MainView.prikazi("Kreiram mjesto " + podatak[1] + " .", "info");
                         Mjesto mjesto = this.kreirajMjesto(podatak);
                         mjesta.add(mjesto);
 
@@ -56,7 +56,7 @@ public class MjestoFactory extends FoiFactory {
 
                 } else {
 
-                    ToFview.prikazi("Format zapisa za mjesto " + podatak[1] + " nije valjan.", "warning");
+                    MainView.prikazi("Format zapisa za mjesto " + podatak[1] + " nije valjan.", "warning");
 
                 }
             }
@@ -81,7 +81,7 @@ public class MjestoFactory extends FoiFactory {
                     Integer.parseInt(podaciMjesta[4]));
 
         } catch (Exception e) {
-            ToFview.prikazi("Format datoteke za mjesta nije valjan!", "warning");
+            MainView.prikazi("Format datoteke za mjesta nije valjan!", "warning");
             System.exit(0);
         }
 

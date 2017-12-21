@@ -13,9 +13,9 @@ import uzdiz_zadaca_3.composite.FoiZgrada;
  */
 public class ToFcontroller {
     private FoiZgrada zgrada;
-    private ToFview view;
+    private MainView view;
     
-    public ToFcontroller(FoiZgrada zgrada, ToFview view){
+    public ToFcontroller(FoiZgrada zgrada, MainView view){
         this.zgrada = zgrada;
         this.view = view;
     }

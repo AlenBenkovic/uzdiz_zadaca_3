@@ -7,7 +7,7 @@ package uzdiz_zadaca_3.composite;
 
 import java.util.ArrayList;
 import java.util.List;
-import uzdiz_zadaca_3.mvc.ToFview;
+import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.utils.RandomNumber;
 import uzdiz_zadaca_3.visitor.Visitable;
 import uzdiz_zadaca_3.visitor.Visitor;
@@ -49,7 +49,7 @@ public class Aktuator extends Uredjaj implements Foi, Visitable {
         for (Senzor s : this.senzori) {
             poruka = poruka + "\n>" + s.id + " " + s.naziv;
         }
-        ToFview.prikazi(poruka, "info");
+        MainView.prikazi(poruka, "info");
     }
 
     @Override
@@ -81,7 +81,7 @@ public class Aktuator extends Uredjaj implements Foi, Visitable {
                 }
 
         }
-        ToFview.prikazi("\nAktuator izvršava radnju.\nNova vrijednost: " + this.formatVrijednost(this.vrijednost) + "\n----------", "info");
+        MainView.prikazi("\nAktuator izvršava radnju.\nNova vrijednost: " + this.formatVrijednost(this.vrijednost) + "\n----------", "info");
 
     }
     
