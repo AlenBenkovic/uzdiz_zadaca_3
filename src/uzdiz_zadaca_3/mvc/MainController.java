@@ -13,8 +13,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import uzdiz_zadaca_3.composite.Aktuator;
 import uzdiz_zadaca_3.composite.FoiZgrada;
 import uzdiz_zadaca_3.composite.Mjesto;
@@ -48,12 +46,14 @@ public class MainController {
         prikazi("C n - izvršavanje n ciklusa dretve (1-100)", "info");
         prikazi("VF - izvršavanje vlastite funkcionalnosti", "info");
         prikazi("PI n - prosječni % ispravnosti uređaja (0-100)", "info");
+        prikazi("H - pomoć, ispis dopuštenih komandi i njihov opis", "info");
         prikazi("I - izlaz.", "info");
     }
 
     public void cekajNaredbu() {
         boolean status = false;
         while (!status) {
+
             unos("Unesite naredbu: ");
             Scanner scanner = new Scanner(System.in);
             String in = scanner.nextLine();
@@ -149,7 +149,33 @@ public class MainController {
                 try {
                     int n = Integer.parseInt(ulaz[1]);
                     if (n >= 1 && n <= 100) {
-                        this.radiProvjere(Integer.parseInt(ulaz[1]));
+                        // this.radiProvjere(Integer.parseInt(ulaz[1]));
+                        MainView.cleanScreen();
+                        MainView.prikazi("RADIM PROVJERE", "title");
+
+                        Runnable dretva = () -> {
+                            int i = 0;
+                            while (i < Integer.parseInt(ulaz[1])) {
+                                try {
+                                    i++;
+                                    Thread.sleep(Integer.parseInt(Params.params.get("-tcd").toString()) * 1000);
+
+                                    this.zgrada.provjera();
+
+                                } catch (InterruptedException ex) {
+                                    MainView.prikazi("Problem u radu sa dretvom", "warning");
+                                }
+
+                            }
+                            this.zgrada.statistika();
+                        };
+
+                        Thread t = new Thread(dretva);
+                        t.start();
+                        while (t.isAlive()) {
+                            // namjerno blokiram dok dretva ne zavrsi sa radom ...
+                        }
+
                     } else {
                         view.prikazi("Broj mora biti u rasponu od 1 do 100", "warning");
                     }
@@ -170,33 +196,14 @@ public class MainController {
                 } catch (NumberFormatException e) {
                     view.prikazi("Neispravan format broja", "warning");
                 }
+            } else if (in.equals("H")) {
+                MainView.cleanLine();
+                this.prikaziNaredbe();
             } else {
                 MainView.cleanLine();
             }
+
         }
-    }
-
-    public void radiProvjere(int brojCiklusa) {
-        view.prikazi("RADIM PROVJERE", "title");
-        Runnable dretva = () -> {
-            int i = 0;
-            while (i < brojCiklusa) {
-                try {
-                    i++;
-                    Thread.sleep(Integer.parseInt(Params.params.get("-tcd").toString()) * 1000);
-
-                    this.zgrada.provjera();
-
-                } catch (InterruptedException ex) {
-                    MainView.prikazi("Problem u radu sa dretvom", "warning");
-                }
-
-            }
-            this.zgrada.statistika();
-        };
-
-        new Thread(dretva).start();
-
     }
 
 }

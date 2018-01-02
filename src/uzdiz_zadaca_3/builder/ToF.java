@@ -5,16 +5,11 @@
  */
 package uzdiz_zadaca_3.builder;
 
-import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import uzdiz_zadaca_3.composite.FoiZgrada;
 import uzdiz_zadaca_3.factory.FoiFactory;
 import uzdiz_zadaca_3.factory.MjestoFactory;
 import uzdiz_zadaca_3.mvc.MainController;
 import uzdiz_zadaca_3.mvc.MainView;
-import static uzdiz_zadaca_3.mvc.MainView.ANSI_ESC;
-import static uzdiz_zadaca_3.mvc.MainView.unos;
 import uzdiz_zadaca_3.utils.Params;
 
 /**
@@ -74,33 +69,10 @@ public class ToF {
 
     public void pokreniProgram() {
         MainView.pressAnyKey();
-        MainView view = new MainView();
-        MainController controller = new MainController(foiZgrada, view);
+        MainView mview = new MainView();
+        MainController controller = new MainController(foiZgrada, mview);
         controller.prikaziNaredbe();
         controller.cekajNaredbu();
-    }
-
-    public void radiProvjere() {
-        Runnable dretva = () -> {
-            int i = 0;
-            while (i < Integer.parseInt(Params.params.get("-bcd").toString())) {
-                try {
-                    i++;
-                    Thread.sleep(Integer.parseInt(Params.params.get("-tcd").toString()) * 1000);
-
-                    this.foiZgrada.provjera();
-                    this.foiZgrada.stanjeUredjaja();
-
-                } catch (InterruptedException ex) {
-                    MainView.prikazi("Problem u radu sa dretvom", "warning");
-                }
-
-            }
-            this.foiZgrada.statistika();
-        };
-
-        new Thread(dretva).start();
-
     }
 
 }

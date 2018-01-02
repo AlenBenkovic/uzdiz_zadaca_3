@@ -57,7 +57,7 @@ public class Mjesto implements Foi, Serializable {
                 if (!u.provjera()) { // ako provjera nije uspjela
                     MainView.prikazi("Radim zamjenu uredjaja", "warning");
                     Uredjaj novi = u.zamjena();
-                    novi.setId(FoiZgrada.najveciIdUredjaja());
+                    novi.setId(FoiZgrada.najveciIdUredjaja()+1);
                     this.uredjaji.add(novi);
                     if (u instanceof Senzor) {
                         this.stat.brojUklonjenihSenzora++;

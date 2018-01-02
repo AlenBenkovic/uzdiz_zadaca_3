@@ -25,6 +25,12 @@ public class Aktuator extends Uredjaj implements Foi, Visitable {
         super(id, naziv, tip, vrsta, min, max, komentar);
         this.senzori = new ArrayList<Senzor>();
     }
+    
+    public Aktuator(int id, String naziv, int tip, int vrsta, float min, float max, String komentar, List<Senzor> senzori) {
+        super(id, naziv, tip, vrsta, min, max, komentar);
+        this.senzori = new ArrayList<Senzor>();
+        this.senzori = senzori;
+    }
 
     public void add(Senzor senzor) {
         this.senzori.add(senzor);
@@ -54,7 +60,7 @@ public class Aktuator extends Uredjaj implements Foi, Visitable {
 
     @Override
     public Uredjaj zamjena() {
-        return new Aktuator(this.id, this.naziv, this.tip, this.vrsta, this.min, this.max, this.komentar);
+        return new Aktuator(this.id, this.naziv, this.tip, this.vrsta, this.min, this.max, this.komentar, this.senzori);
     }
     
     public void obaviRadnju() {
@@ -81,7 +87,8 @@ public class Aktuator extends Uredjaj implements Foi, Visitable {
                 }
 
         }
-        MainView.prikazi("\nAktuator izvršava radnju.\nNova vrijednost: " + this.formatVrijednost(this.vrijednost) + "\n----------", "info");
+        MainView.prikazi("Aktuator izvršava radnju", "info");
+        MainView.prikazi("Nova vrijednost: " + this.formatVrijednost(this.vrijednost), "info");
 
     }
     

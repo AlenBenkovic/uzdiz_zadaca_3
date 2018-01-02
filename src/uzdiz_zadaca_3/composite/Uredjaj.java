@@ -61,15 +61,13 @@ public abstract class Uredjaj implements Foi, Visitable, Serializable {
             }
         }
 
-        String poruka = "\nUredjaj: " + this.id + " " + this.naziv
-                + "\nStatus: " + status + " (neuspjesne provjere: " + this.neuspjesneProvjere + ")";
+        MainView.prikazi("Uredjaj: " + this.id + " " + this.naziv, "title2");
+        MainView.prikazi("Status: " + status + " (neuspjesne provjere: " + this.neuspjesneProvjere + ")", status>0? "info": "warning");
 
         if (status > 0) {
-            poruka = poruka + "\nVrijednost: " + this.formatVrijednost(this.vrijednost);
-            MainView.prikazi(poruka, "info");
+            MainView.prikazi("Vrijednost: " + this.formatVrijednost(this.vrijednost), "info");
         } else {
-            poruka = poruka + "\nVrijednost: " + "nepoznato";
-            MainView.prikazi(poruka, "warning");
+            MainView.prikazi("Vrijednost: " + "nepoznato", "info");
         }
 
         return !this.onemogucen;

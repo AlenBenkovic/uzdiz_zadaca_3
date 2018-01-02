@@ -27,7 +27,7 @@ public class MainView {
         cleanScreen();
     }
 
-    public void cleanScreen() {
+    public static void cleanScreen() {
 
         x = 1;
         y = 0;
@@ -37,6 +37,7 @@ public class MainView {
     public static void cleanLine() {
         System.out.print(ANSI_ESC + "2K");
     }
+    
 
     public static void postavi(int j, int k, boolean isC) {
         if (isC) {
@@ -78,6 +79,9 @@ public class MainView {
                 break;
             case "title":
                 System.out.print(ANSI_ESC + "44m");
+                break;
+            case "title2":
+                System.out.print(ANSI_ESC + "43m");
                 break;
         }
 
