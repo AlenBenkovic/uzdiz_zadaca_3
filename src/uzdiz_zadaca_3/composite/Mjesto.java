@@ -31,7 +31,6 @@ public class Mjesto implements Foi, Serializable {
     // radi kompozicije ovdje bi radije stavio samo aktuatore
     // ali na taj nacin cu dobiti dupli prikaz pridruzenosti senzora
 
-
     public Mjesto(int id, String naziv, int tip, int brojSenzora, int brojAktuatora) {
         this.uredjaji = new ArrayList<>();
         this.naziv = naziv;
@@ -49,7 +48,6 @@ public class Mjesto implements Foi, Serializable {
             /* kreiram iterator klase X na temelju korisnickog unosa
             FoiIterator iterator = (FoiIterator) Class.forName(Params.params.get("-alg").toString())
                     .getConstructor(List.class).newInstance(this.uredjaji);*/
-            
             FoiIterator iterator = new AlgoritamSlijedno(uredjaji);
 
             while (iterator.hasNext()) {
@@ -57,8 +55,23 @@ public class Mjesto implements Foi, Serializable {
                 if (!u.provjera()) { // ako provjera nije uspjela
                     MainView.prikazi("Radim zamjenu uredjaja", "warning");
                     Uredjaj novi = u.zamjena();
-                    novi.setId(FoiZgrada.najveciIdUredjaja()+1);
+                    novi.setId(FoiZgrada.najveciIdUredjaja() + 1);
                     this.uredjaji.add(novi);
+                    this.uredjaji.remove(u);
+                    for (Uredjaj ur : this.uredjaji) {
+                        if (ur instanceof Aktuator) {
+                            ((Aktuator) ur).getSenzori().remove(u);
+                            if (novi instanceof Senzor) {
+                                ((Aktuator) ur).getSenzori().add((Senzor) novi);
+                            }
+                        } else {
+                            ((Senzor) ur).getAktuatori().remove(u);
+                            if (novi instanceof Aktuator) {
+                                ((Senzor) ur).getAktuatori().add((Aktuator) novi);
+                            }
+
+                        }
+                    }
                     if (u instanceof Senzor) {
                         this.stat.brojUklonjenihSenzora++;
                         this.stat.brojDodanihSenzora++;
