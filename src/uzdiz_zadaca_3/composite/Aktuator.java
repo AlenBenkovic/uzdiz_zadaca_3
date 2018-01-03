@@ -10,14 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.utils.RandomNumber;
-import uzdiz_zadaca_3.visitor.Visitable;
-import uzdiz_zadaca_3.visitor.Visitor;
 
 /**
  *
  * @author abenkovic
  */
-public class Aktuator extends Uredjaj implements Foi, Visitable {
+public class Aktuator extends Uredjaj implements Foi {
 
     private List<Senzor> senzori;
     boolean gore = true;
@@ -91,11 +89,6 @@ public class Aktuator extends Uredjaj implements Foi, Visitable {
         MainView.prikazi("Aktuator izvršava radnju", "info");
         MainView.prikazi("Nova vrijednost: " + this.formatVrijednost(this.vrijednost), "info");
 
-    }
-    
-    @Override
-    public float accept(Visitor visitor) {
-        return visitor.visit(this);
     }
     
 }

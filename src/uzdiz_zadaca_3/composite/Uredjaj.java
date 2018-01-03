@@ -9,14 +9,12 @@ import java.io.Serializable;
 import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.utils.Params;
 import uzdiz_zadaca_3.utils.RandomNumber;
-import uzdiz_zadaca_3.visitor.Visitable;
-import uzdiz_zadaca_3.visitor.Visitor;
 
 /**
  *
  * @author abenkovic
  */
-public abstract class Uredjaj implements Foi, Visitable, Serializable {
+public abstract class Uredjaj implements Foi, Serializable {
 
     public String naziv;
     public int tip;
@@ -112,11 +110,6 @@ public abstract class Uredjaj implements Foi, Visitable, Serializable {
                 return (int) v > 0 ? "da" : "ne";
         }
         return "nema";
-    }
-
-    @Override
-    public float accept(Visitor visitor) {
-        return visitor.visit(this);
     }
 
     public void setId(int id) {

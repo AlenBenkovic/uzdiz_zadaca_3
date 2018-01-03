@@ -18,7 +18,6 @@ import uzdiz_zadaca_3.iterator.MjestoIterator;
 import uzdiz_zadaca_3.iterator.FoiIterator;
 import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.utils.Params;
-import uzdiz_zadaca_3.visitor.UredjajVisitor;
 
 /**
  *
@@ -225,20 +224,6 @@ public class FoiZgrada implements Foi, Serializable {
         return true;
     }
 
-    public void stanjeUredjaja() {
-
-        FoiIterator iterator = this.createIterator();
-        while (iterator.hasNext()) {
-            Mjesto m = (Mjesto) iterator.next();
-            MainView.prikazi("Prikaz stanja uredjaja " + m.id + " " + m.naziv, "title");
-            for (Uredjaj u : m.getUredjaji()) {
-                UredjajVisitor uv = new UredjajVisitor();
-                MainView.prikazi("Uredjaj " + u.naziv + " (" + u.formatVrijednost(u.vrijednost) + "/" + u.formatVrijednost(u.max) + ") " + (int) u.accept(uv) + "%", "info");
-            }
-
-        }
-
-    }
 
     public List<Statistika> statistika() {
         List<Statistika> stat = new ArrayList<>();

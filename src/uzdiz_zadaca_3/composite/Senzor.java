@@ -5,18 +5,15 @@
  */
 package uzdiz_zadaca_3.composite;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import uzdiz_zadaca_3.mvc.MainView;
-import uzdiz_zadaca_3.visitor.Visitable;
-import uzdiz_zadaca_3.visitor.Visitor;
 
 /**
  *
  * @author abenkovic
  */
-public class Senzor extends Uredjaj implements Foi, Visitable {
+public class Senzor extends Uredjaj implements Foi {
 
     private List<Aktuator> aktuatori;
     public boolean imaNovuVrijednost = false;
@@ -72,10 +69,7 @@ public class Senzor extends Uredjaj implements Foi, Visitable {
         this.imaNovuVrijednost = imaNovuVrijednost;
     }
 
-    @Override
-    public float accept(Visitor visitor) {
-        return visitor.visit(this);
-    }
+
 
 
 
