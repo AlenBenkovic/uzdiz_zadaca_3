@@ -5,7 +5,6 @@
  */
 package uzdiz_zadaca_3.iterator;
 
-import java.util.Collections;
 import java.util.List;
 import uzdiz_zadaca_3.composite.Uredjaj;
 
@@ -19,8 +18,9 @@ public class AlgoritamSlijedno implements FoiIterator{
     int position = 0;
 
     public AlgoritamSlijedno(List<Uredjaj> uredjaji) {
+        position = 0;
         this.uredjaji = uredjaji;
-        Collections.sort(this.uredjaji, (u1, u2) -> u1.id - u2.id);
+        // Collections.sort(this.uredjaji, (u1, u2) -> u1.id - u2.id);
     }
 
     @Override

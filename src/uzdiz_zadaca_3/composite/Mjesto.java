@@ -42,60 +42,68 @@ public class Mjesto implements Foi, Serializable {
 
     @Override
     public boolean provjera() {
-        try {
 
-            /* kreiram iterator klase X na temelju korisnickog unosa
+
+        /* kreiram iterator klase X na temelju korisnickog unosa
             FoiIterator iterator = (FoiIterator) Class.forName(Params.params.get("-alg").toString())
                     .getConstructor(List.class).newInstance(this.uredjaji);*/
-            FoiIterator iterator = new AlgoritamSlijedno(uredjaji);
+        FoiIterator iterator = new AlgoritamSlijedno(uredjaji);
 
-            while (iterator.hasNext()) {
+        List<Uredjaj> ukloni = new ArrayList();
 
-                Uredjaj u = (Uredjaj) iterator.next();
-                if (!u.provjera()) { // ako provjera nije uspjela
-                    MainView.prikazi("Radim zamjenu uredjaja", "warning");
-                    Uredjaj novi = u.zamjena();
-                    novi.setId(FoiZgrada.najveciIdUredjaja() + 1);
-                    this.uredjaji.add(novi);
-                    this.uredjaji.remove(u);
-                    for (Uredjaj ur : this.uredjaji) {
-                        if (ur instanceof Aktuator) {
-                            ((Aktuator) ur).getSenzori().remove(u);
-                            if (novi instanceof Senzor) {
-                                ((Aktuator) ur).getSenzori().add((Senzor) novi);
-                            }
-                        } else {
-                            ((Senzor) ur).getAktuatori().remove(u);
-                            if (novi instanceof Aktuator) {
-                                ((Senzor) ur).getAktuatori().add((Aktuator) novi);
-                            }
-
+        while (iterator.hasNext()) {
+            Uredjaj u = (Uredjaj) iterator.next();
+            MainView.prikazi(u.naziv, "info");
+            if (!u.provjera()) { // ako provjera nije uspjela
+                MainView.prikazi("Radim zamjenu uredjaja", "warning");
+                Uredjaj novi = u.zamjena();
+                novi.setId(FoiZgrada.najveciIdUredjaja() + 1);
+                ukloni.add(u);
+                
+                for (Uredjaj ur : this.uredjaji) {
+                    if (ur instanceof Aktuator) {
+                        ((Aktuator) ur).getSenzori().remove(u);
+                        if (novi instanceof Senzor) {
+                            ((Aktuator) ur).getSenzori().add((Senzor) novi);
                         }
-                    }
-                    if (u instanceof Senzor) {
-                        this.stat.brojUklonjenihSenzora++;
-                        this.stat.brojDodanihSenzora++;
                     } else {
-                        this.stat.brojUklonjenihAktuatora++;
-                        this.stat.brojDodanihAktuatora++;
+                        ((Senzor) ur).getAktuatori().remove(u);
+                        if (novi instanceof Aktuator) {
+                            if(!((Senzor) ur).getAktuatori().contains(novi)){
+                              ((Senzor) ur).getAktuatori().add((Aktuator) novi);  
+                            }
+                        }
+
                     }
                 }
-
-                if (u instanceof Aktuator) {
-                    boolean obaviRadnju = false;
-                    for (Senzor s : ((Aktuator) u).getSenzori()) {
-                        if (s.imaNovuVrijednost && s.status > 0 && ((Aktuator) u).status > 0) {
-                            obaviRadnju = true;
-                        }
-                    }
-                    if (obaviRadnju) {
-                        ((Aktuator) u).obaviRadnju();
-                    }
-
+                
+                this.uredjaji.add(novi);
+                
+                if (u instanceof Senzor) {
+                    this.stat.brojUklonjenihSenzora++;
+                    this.stat.brojDodanihSenzora++;
+                } else {
+                    this.stat.brojUklonjenihAktuatora++;
+                    this.stat.brojDodanihAktuatora++;
                 }
             }
-        } catch (Exception e) {
-            MainView.prikazi("Greska prilikom ucitavanja klase: " + e.toString(), "warning");
+
+            if (u instanceof Aktuator) {
+                boolean obaviRadnju = false;
+                for (Senzor s : ((Aktuator) u).getSenzori()) {
+                    if (s.imaNovuVrijednost && s.status > 0 && ((Aktuator) u).status > 0) {
+                        obaviRadnju = true;
+                    }
+                }
+                if (obaviRadnju) {
+                    ((Aktuator) u).obaviRadnju();
+                }
+
+            }
+        }
+        
+        for (Uredjaj u: ukloni){
+            this.uredjaji.remove(u);
         }
 
         return true;

@@ -139,7 +139,6 @@ public class MainController {
                     fileIn = new FileInputStream("zgrada.foi");
                     ObjectInputStream input = new ObjectInputStream(fileIn);
                     this.zgrada = (FoiZgrada) input.readObject();
-
                     view.prikazi("Podaci su uspjesno ucitani.", "info");
                 } catch (FileNotFoundException ex) {
                     view.prikazi("Ne postoje spremljeni podaci!", "warning");
