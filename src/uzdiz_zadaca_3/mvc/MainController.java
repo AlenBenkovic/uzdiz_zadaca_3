@@ -187,7 +187,7 @@ public class MainController {
             } else if (in.equals("VF")) {
                 // dohvat vanjske temperature
                 MjestoHandler chain = zgrada.setChain();
-                chain.handleRequest(0);
+                chain.handleRequest(0); // samo vanjska mjesta neka izvrse ovu naredbu
             } else if (ulaz[0].equals("PI") && ulaz.length > 1) {
                 try {
                     int n = Integer.parseInt(ulaz[1]);

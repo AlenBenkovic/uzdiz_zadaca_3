@@ -5,7 +5,6 @@
  */
 package uzdiz_zadaca_3.composite;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import uzdiz_zadaca_3.mvc.MainView;

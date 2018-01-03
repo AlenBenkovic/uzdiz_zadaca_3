@@ -47,7 +47,7 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
             for (Uredjaj u : this.uredjaji) {
                 if (u instanceof Senzor) {
                     if (((Senzor) u).naziv.contains("temperatura")) {
-                        MainView.prikazi("Trenutna temperatura u Varaždinu je: " + ((Senzor) u).vrijednost, "title2");
+                        MainView.prikazi(String.format("%-35s %15s", "Trenutna temperatura u Varaždinu je:", ((Senzor) u).vrijednost), "title2");
                     }
                 }
             }
@@ -71,53 +71,55 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
 
         while (iterator.hasNext()) {
             Uredjaj u = (Uredjaj) iterator.next();
-            MainView.prikazi(u.naziv, "info");
-            if (!u.provjera()) { // ako provjera nije uspjela
-                MainView.prikazi("Radim zamjenu uredjaja", "warning");
-                Uredjaj novi = u.zamjena();
-                novi.setId(FoiZgrada.najveciIdUredjaja() + 1);
-                ukloni.add(u);
+            if (!u.onemogucen) {
+                if (!u.provjera()) { // ako provjera nije uspjela
+                    MainView.prikazi("Radim zamjenu uredjaja", "warning");
+                    Uredjaj novi = u.zamjena();
+                    novi.setId(FoiZgrada.najveciIdUredjaja() + 1);
+                    ukloni.add(u);
 
-                for (Uredjaj ur : this.uredjaji) {
-                    if (ur instanceof Aktuator) {
-                        ((Aktuator) ur).getSenzori().remove(u);
-                        if (novi instanceof Senzor) {
-                            ((Aktuator) ur).getSenzori().add((Senzor) novi);
-                        }
-                    } else {
-                        ((Senzor) ur).getAktuatori().remove(u);
-                        if (novi instanceof Aktuator) {
-                            if (!((Senzor) ur).getAktuatori().contains(novi)) {
-                                ((Senzor) ur).getAktuatori().add((Aktuator) novi);
+                    for (Uredjaj ur : this.uredjaji) {
+                        if (ur instanceof Aktuator) {
+                            ((Aktuator) ur).getSenzori().remove(u);
+                            if (novi instanceof Senzor) {
+                                ((Aktuator) ur).getSenzori().add((Senzor) novi);
                             }
+                        } else {
+                            ((Senzor) ur).getAktuatori().remove(u);
+                            if (novi instanceof Aktuator) {
+                                if (!((Senzor) ur).getAktuatori().contains(novi)) {
+                                    ((Senzor) ur).getAktuatori().add((Aktuator) novi);
+                                }
+                            }
+
                         }
+                    }
 
+                    this.uredjaji.add(novi);
+
+                    if (u instanceof Senzor) {
+                        this.stat.brojUklonjenihSenzora++;
+                        this.stat.brojDodanihSenzora++;
+                    } else {
+                        this.stat.brojUklonjenihAktuatora++;
+                        this.stat.brojDodanihAktuatora++;
                     }
                 }
 
-                this.uredjaji.add(novi);
-
-                if (u instanceof Senzor) {
-                    this.stat.brojUklonjenihSenzora++;
-                    this.stat.brojDodanihSenzora++;
-                } else {
-                    this.stat.brojUklonjenihAktuatora++;
-                    this.stat.brojDodanihAktuatora++;
-                }
-            }
-
-            if (u instanceof Aktuator) {
-                boolean obaviRadnju = false;
-                for (Senzor s : ((Aktuator) u).getSenzori()) {
-                    if (s.imaNovuVrijednost && s.status > 0 && ((Aktuator) u).status > 0) {
-                        obaviRadnju = true;
+                if (u instanceof Aktuator) {
+                    boolean obaviRadnju = false;
+                    for (Senzor s : ((Aktuator) u).getSenzori()) {
+                        if (s.imaNovuVrijednost && s.status > 0 && ((Aktuator) u).status > 0) {
+                            obaviRadnju = true;
+                        }
                     }
-                }
-                if (obaviRadnju) {
-                    ((Aktuator) u).obaviRadnju();
-                }
+                    if (obaviRadnju) {
+                        ((Aktuator) u).obaviRadnju();
+                    }
 
+                }
             }
+
         }
 
         for (Uredjaj u : ukloni) {
@@ -179,9 +181,9 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
             }
         }
 
-        for (Uredjaj neispravniUredjaj : neispravniUredjaji) {
+        /*for (Uredjaj neispravniUredjaj : neispravniUredjaji) {
             this.uredjaji.remove(neispravniUredjaj);
-        }
+        }*/
         return true;
     }
 

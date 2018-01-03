@@ -74,7 +74,12 @@ public abstract class Uredjaj implements Foi, Serializable {
 
     @Override
     public boolean inicijalizacija() {
-        return RandomNumber.dajSlucajniBroj(0, 100) < 90;
+        if(RandomNumber.dajSlucajniBroj(0, 100) < 90){
+            return true;
+        } else {
+            onemogucen = true;
+            return false;
+        }
     }
 
     public abstract void pridruzenostUredjaja();

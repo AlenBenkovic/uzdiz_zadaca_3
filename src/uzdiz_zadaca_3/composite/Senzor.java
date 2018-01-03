@@ -71,6 +71,4 @@ public class Senzor extends Uredjaj implements Foi {
 
 
 
-
-
 }
