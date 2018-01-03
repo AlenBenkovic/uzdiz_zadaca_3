@@ -124,6 +124,7 @@ public class MainController {
                     oos = new ObjectOutputStream(
                             new FileOutputStream(new File("zgrada.foi")));
                     oos.writeObject(zgrada);
+                    oos.flush();
                     oos.close();
                     view.prikazi("Podaci uspjesno spremljeni.", "info");
 
@@ -138,6 +139,7 @@ public class MainController {
                     fileIn = new FileInputStream("zgrada.foi");
                     ObjectInputStream input = new ObjectInputStream(fileIn);
                     this.zgrada = (FoiZgrada) input.readObject();
+
                     view.prikazi("Podaci su uspjesno ucitani.", "info");
                 } catch (FileNotFoundException ex) {
                     view.prikazi("Ne postoje spremljeni podaci!", "warning");

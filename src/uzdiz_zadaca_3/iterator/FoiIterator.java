@@ -5,8 +5,6 @@
  */
 package uzdiz_zadaca_3.iterator;
 
-import uzdiz_zadaca_3.composite.Mjesto;
-
 /**
  *
  * @author abenkovic

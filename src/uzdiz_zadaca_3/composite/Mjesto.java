@@ -11,7 +11,6 @@ import java.util.List;
 import uzdiz_zadaca_3.iterator.AlgoritamSlijedno;
 import uzdiz_zadaca_3.iterator.FoiIterator;
 import uzdiz_zadaca_3.mvc.MainView;
-import uzdiz_zadaca_3.utils.Params;
 import uzdiz_zadaca_3.utils.RandomNumber;
 
 /**
@@ -51,6 +50,7 @@ public class Mjesto implements Foi, Serializable {
             FoiIterator iterator = new AlgoritamSlijedno(uredjaji);
 
             while (iterator.hasNext()) {
+
                 Uredjaj u = (Uredjaj) iterator.next();
                 if (!u.provjera()) { // ako provjera nije uspjela
                     MainView.prikazi("Radim zamjenu uredjaja", "warning");
@@ -95,7 +95,7 @@ public class Mjesto implements Foi, Serializable {
                 }
             }
         } catch (Exception e) {
-            MainView.prikazi("Greska prilikom ucitavanja klase: " + e.getMessage(), "warning");
+            MainView.prikazi("Greska prilikom ucitavanja klase: " + e.toString(), "warning");
         }
 
         return true;

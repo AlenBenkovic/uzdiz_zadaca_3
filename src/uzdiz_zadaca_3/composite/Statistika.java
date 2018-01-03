@@ -11,7 +11,7 @@ import java.io.Serializable;
  *
  * @author abenkovic
  */
-public class Statistika implements Serializable{
+public class Statistika implements Serializable {
 
     public String nazivMjesta;
     public int idMjesta;

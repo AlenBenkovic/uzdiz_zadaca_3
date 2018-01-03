@@ -18,7 +18,7 @@ import uzdiz_zadaca_3.utils.Params;
  */
 public class ToF {
 
-    private final FoiZgrada foiZgrada;
+    private FoiZgrada foiZgrada;
     private final MainView view;
 
     public ToF(Builder builder) {
@@ -28,7 +28,7 @@ public class ToF {
 
     public static class Builder {
 
-        private final FoiZgrada foiZgrada = new FoiZgrada();
+        private FoiZgrada foiZgrada = new FoiZgrada();
         private final MainView view = new MainView();
 
         public Builder() {
