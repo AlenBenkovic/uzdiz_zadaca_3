@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import uzdiz_zadaca_3.chain.MjestoHandler;
 import uzdiz_zadaca_3.factory.FoiFactory;
 import uzdiz_zadaca_3.factory.UredjajFactory;
 import uzdiz_zadaca_3.iterator.MjestoIterator;
@@ -35,6 +36,17 @@ public class FoiZgrada implements Foi, Serializable {
             m.provjera();
         }
         return true;
+    }
+    
+    public MjestoHandler setChain(){
+        for(int i=0; i<mjesta.size(); i++){
+            if(i+1<mjesta.size()){
+              mjesta.get(i).setSuccessor(mjesta.get(i+1));  
+            } else {
+                mjesta.get(i).setSuccessor(null);
+            }    
+        }
+        return mjesta.get(0);
     }
 
     public void add(Mjesto mjesto) {

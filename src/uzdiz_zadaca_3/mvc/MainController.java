@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Scanner;
+import uzdiz_zadaca_3.chain.MjestoHandler;
 import uzdiz_zadaca_3.composite.Aktuator;
 import uzdiz_zadaca_3.composite.FoiZgrada;
 import uzdiz_zadaca_3.composite.Mjesto;
@@ -184,7 +185,9 @@ public class MainController {
                     view.prikazi("Neispravan format broja", "warning");
                 }
             } else if (in.equals("VF")) {
-                view.prikazi("VF", "info");
+                // dohvat vanjske temperature
+                MjestoHandler chain = zgrada.setChain();
+                chain.handleRequest(0);
             } else if (ulaz[0].equals("PI") && ulaz.length > 1) {
                 try {
                     int n = Integer.parseInt(ulaz[1]);

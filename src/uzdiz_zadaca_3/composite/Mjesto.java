@@ -8,6 +8,7 @@ package uzdiz_zadaca_3.composite;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import uzdiz_zadaca_3.chain.MjestoHandler;
 import uzdiz_zadaca_3.iterator.AlgoritamSlijedno;
 import uzdiz_zadaca_3.iterator.FoiIterator;
 import uzdiz_zadaca_3.mvc.MainView;
@@ -17,7 +18,7 @@ import uzdiz_zadaca_3.utils.RandomNumber;
  *
  * @author abenkovic
  */
-public class Mjesto implements Foi, Serializable {
+public class Mjesto extends MjestoHandler implements Foi, Serializable {
 
     public final String naziv;
     public final int tip;
@@ -41,6 +42,23 @@ public class Mjesto implements Foi, Serializable {
     }
 
     @Override
+    public void handleRequest(int tipMjesta) {
+        if (tipMjesta == this.tip) {
+            for (Uredjaj u : this.uredjaji) {
+                if (u instanceof Senzor) {
+                    if (((Senzor) u).naziv.contains("temperatura")) {
+                        MainView.prikazi("Trenutna temperatura u Varaždinu je: " + ((Senzor) u).vrijednost, "title2");
+                    }
+                }
+            }
+        } else {
+            if (successor != null) {
+                successor.handleRequest(tipMjesta);
+            }
+        }
+    }
+
+    @Override
     public boolean provjera() {
 
 
@@ -59,7 +77,7 @@ public class Mjesto implements Foi, Serializable {
                 Uredjaj novi = u.zamjena();
                 novi.setId(FoiZgrada.najveciIdUredjaja() + 1);
                 ukloni.add(u);
-                
+
                 for (Uredjaj ur : this.uredjaji) {
                     if (ur instanceof Aktuator) {
                         ((Aktuator) ur).getSenzori().remove(u);
@@ -69,16 +87,16 @@ public class Mjesto implements Foi, Serializable {
                     } else {
                         ((Senzor) ur).getAktuatori().remove(u);
                         if (novi instanceof Aktuator) {
-                            if(!((Senzor) ur).getAktuatori().contains(novi)){
-                              ((Senzor) ur).getAktuatori().add((Aktuator) novi);  
+                            if (!((Senzor) ur).getAktuatori().contains(novi)) {
+                                ((Senzor) ur).getAktuatori().add((Aktuator) novi);
                             }
                         }
 
                     }
                 }
-                
+
                 this.uredjaji.add(novi);
-                
+
                 if (u instanceof Senzor) {
                     this.stat.brojUklonjenihSenzora++;
                     this.stat.brojDodanihSenzora++;
@@ -101,8 +119,8 @@ public class Mjesto implements Foi, Serializable {
 
             }
         }
-        
-        for (Uredjaj u: ukloni){
+
+        for (Uredjaj u : ukloni) {
             this.uredjaji.remove(u);
         }
 
