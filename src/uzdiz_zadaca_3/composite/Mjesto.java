@@ -28,9 +28,7 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
     public final Statistika stat;
     public FoiZgrada zgrada = null;
 
-    List<Uredjaj> uredjaji; // koristim samo jednu listu uredjaja radi prikaza pridruzenosti senzora i aktuatora,
-    // radi kompozicije ovdje bi radije stavio samo aktuatore
-    // ali na taj nacin cu dobiti dupli prikaz pridruzenosti senzora
+    List<Uredjaj> uredjaji;
 
     public Mjesto(int id, String naziv, int tip, int brojSenzora, int brojAktuatora) {
         this.uredjaji = new ArrayList<>();
@@ -62,13 +60,7 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
     @Override
     public boolean provjera() {
 
-
-        /* kreiram iterator klase X na temelju korisnickog unosa
-            FoiIterator iterator = (FoiIterator) Class.forName(Params.params.get("-alg").toString())
-                    .getConstructor(List.class).newInstance(this.uredjaji);*/
         FoiIterator iterator = new AlgoritamSlijedno(uredjaji);
-
-        List<Uredjaj> ukloni = new ArrayList();
 
         while (iterator.hasNext()) {
             Uredjaj u = (Uredjaj) iterator.next();
@@ -77,7 +69,6 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
                     MainView.prikazi("Radim zamjenu uredjaja", "warning");
                     Uredjaj novi = u.zamjena();
                     novi.setId(najveciIdUredjaja() + 1);
-                    //ukloni.add(u);
 
                     for (Uredjaj ur : this.uredjaji) {
                         if (ur instanceof Aktuator) {
@@ -122,10 +113,6 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
             }
 
         }
-
-        /*for (Uredjaj u : ukloni) {
-            this.uredjaji.remove(u);
-        }*/
 
         return true;
     }
@@ -182,9 +169,6 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
             }
         }
 
-        /*for (Uredjaj neispravniUredjaj : neispravniUredjaji) {
-            this.uredjaji.remove(neispravniUredjaj);
-        }*/
         return true;
     }
 
