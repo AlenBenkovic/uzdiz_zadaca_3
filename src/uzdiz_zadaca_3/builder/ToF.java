@@ -39,6 +39,7 @@ public class ToF {
             FoiFactory factory = new MjestoFactory();
 
             factory.kreirajMjesta(Params.params.get("-m").toString()).forEach((m) -> {
+                m.zgrada = this.foiZgrada;
                 this.foiZgrada.add(m);
             });
 

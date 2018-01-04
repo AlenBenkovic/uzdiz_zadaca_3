@@ -26,6 +26,7 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
     public final int brojAktuatora;
     public final int id;
     public final Statistika stat;
+    public FoiZgrada zgrada = null;
 
     List<Uredjaj> uredjaji; // koristim samo jednu listu uredjaja radi prikaza pridruzenosti senzora i aktuatora,
     // radi kompozicije ovdje bi radije stavio samo aktuatore
@@ -75,7 +76,7 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
                 if (!u.provjera()) { // ako provjera nije uspjela
                     MainView.prikazi("Radim zamjenu uredjaja", "warning");
                     Uredjaj novi = u.zamjena();
-                    novi.setId(FoiZgrada.najveciIdUredjaja() + 1);
+                    novi.setId(najveciIdUredjaja() + 1);
                     ukloni.add(u);
 
                     for (Uredjaj ur : this.uredjaji) {
@@ -230,6 +231,19 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
         for (Uredjaj uredjaj : this.uredjaji) {
             uredjaj.pridruzenostUredjaja();
         }
+    }
+    
+    public int najveciIdUredjaja() {
+        int max = 0;
+        for (Mjesto m : zgrada.getMjesta()) {
+            for (Uredjaj u : m.uredjaji) {
+                if (u.id > max) {
+                    max = u.id;
+                }
+            }
+        }
+
+        return max;
     }
 
 }

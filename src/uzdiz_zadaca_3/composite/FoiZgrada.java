@@ -25,7 +25,7 @@ import uzdiz_zadaca_3.utils.Params;
  */
 public class FoiZgrada implements Foi, Serializable {
 
-    private static List<Mjesto> mjesta = new ArrayList<>();
+    private List<Mjesto> mjesta = new ArrayList<>();
     private List<Uredjaj> uredjajModeli = new ArrayList<>();
 
     @Override
@@ -232,19 +232,6 @@ public class FoiZgrada implements Foi, Serializable {
         }
 
         return stat;
-    }
-
-    public static int najveciIdUredjaja() {
-        int max = 0;
-        for (Mjesto m : mjesta) {
-            for (Uredjaj u : m.uredjaji) {
-                if (u.id > max) {
-                    max = u.id;
-                }
-            }
-        }
-
-        return max;
     }
 
 }
