@@ -84,7 +84,6 @@ public class FoiZgrada implements Foi, Serializable {
                 String[] podatak = s.trim().split(";");
                 if (redak > 2) { // prva tri reda su zaglavlje
                     if (Integer.parseInt(podatak[0]) == 0) {
-                        // MainView.prikazi("Raspored po mjestima", "info");
                         /*
                             0 - tip zapisa (mjesto ili aktuator)
                             1 - ID mjesta
@@ -140,7 +139,6 @@ public class FoiZgrada implements Foi, Serializable {
                             1 - ID aktuatora
                             2 - ID senzora [više njih]
                          */
-                        // MainView.prikazi("Raspored senzora po aktuatorima", "info");
                         if (podatak.length == 3) {
                             Aktuator aktuator = (Aktuator) this.dohvatiUredjaj(Integer.parseInt(podatak[1]));
                             String[] senzori = podatak[2].trim().split(",");
@@ -154,7 +152,6 @@ public class FoiZgrada implements Foi, Serializable {
                                 }
                             }
 
-                            // radi nesta pametno
                         } else {
                             MainView.prikazi("Format rasporeda senzora po aktuatorima nije valjan", "warning");
                         }

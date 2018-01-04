@@ -77,7 +77,7 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
                     MainView.prikazi("Radim zamjenu uredjaja", "warning");
                     Uredjaj novi = u.zamjena();
                     novi.setId(najveciIdUredjaja() + 1);
-                    ukloni.add(u);
+                    //ukloni.add(u);
 
                     for (Uredjaj ur : this.uredjaji) {
                         if (ur instanceof Aktuator) {
@@ -123,9 +123,9 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
 
         }
 
-        for (Uredjaj u : ukloni) {
+        /*for (Uredjaj u : ukloni) {
             this.uredjaji.remove(u);
-        }
+        }*/
 
         return true;
     }

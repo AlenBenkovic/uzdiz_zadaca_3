@@ -28,10 +28,7 @@ public class UredjajFactory extends FoiFactory {
     List<Uredjaj> uredjajModeli;
 
     public UredjajFactory() {
-
         this.uredjajModeli = new ArrayList<>();
-        // this.ucitajModeleUredjaja(true); // ucitavam senzore
-        // this.ucitajModeleUredjaja(false); // ucitavam aktuatore
     }
 
     @Override
@@ -73,10 +70,8 @@ public class UredjajFactory extends FoiFactory {
                     if (!postojiUredjaj(Integer.parseInt(podatak[0]), uredjajModeli)) {
                         if (isSenzor) {
                             this.uredjajModeli.add(this.kreirajSenzor(podatak));
-                            // this.popisSenzora.add(podatak);
                         } else {
                             this.uredjajModeli.add(this.kreirajAktuator(podatak));
-                            // this.popisAktuatora.add(podatak);
                         }
                     } else {
                         MainView.prikazi("Model uredjaja sa ID " + podatak[0] + " vec postoji.", "warning");

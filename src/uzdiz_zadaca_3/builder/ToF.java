@@ -39,7 +39,7 @@ public class ToF {
             FoiFactory factory = new MjestoFactory();
 
             factory.kreirajMjesta(Params.params.get("-m").toString()).forEach((m) -> {
-                m.zgrada = this.foiZgrada;
+                m.zgrada = this.foiZgrada; // referenca do zgrade kako bi mogao naci najveci id u zgradi
                 this.foiZgrada.add(m);
             });
 

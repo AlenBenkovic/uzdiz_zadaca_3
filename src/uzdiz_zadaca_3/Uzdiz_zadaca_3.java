@@ -21,7 +21,7 @@ public class Uzdiz_zadaca_3 {
     public static void main(String[] args) {
         if (Params.checkArgs(args)) {
             ToF tof = new ToF.Builder()
-                    // sucelje se inicijalizira odma kod kreiranja buildera
+                    // sucelje se inicijalizira odmah kod kreiranja buildera
                     .kreirajMjesta()
                     .ucitajModeleUredjaja()
                     .ucitajraspored()
@@ -29,7 +29,6 @@ public class Uzdiz_zadaca_3 {
                     .build();
             
             tof.pokreniProgram();
-            //tof.radiProvjere();
             
         } else {
             MainView.prikazi("Parametri nisu ispravni!", "warning");

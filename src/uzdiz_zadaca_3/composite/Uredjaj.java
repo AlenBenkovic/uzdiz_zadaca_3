@@ -74,7 +74,7 @@ public abstract class Uredjaj implements Foi, Serializable {
 
     @Override
     public boolean inicijalizacija() {
-        if(RandomNumber.dajSlucajniBroj(0, 100) < 90){
+        if(RandomNumber.dajSlucajniBroj(0, 100) < Integer.parseInt(Params.params.get("-pi").toString())){
             return true;
         } else {
             onemogucen = true;

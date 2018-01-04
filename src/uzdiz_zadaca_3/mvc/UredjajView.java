@@ -25,7 +25,7 @@ public class UredjajView extends MainView {
         super.prikazi(String.format("%-35s %15s", "Vrsta uredjaja:", s.vrsta), "info");
         super.prikazi(String.format("%-35s %15s", "Trenutna vrijednost:", s.vrijednost), "info");
         super.prikazi(String.format("%-35s %15s", "Neuspjesne provjere:", s.neuspjesneProvjere), "info");
-        super.prikazi(String.format("%-35s %15s", "Uredjaj onemogucen:", s.onemogucen), "info");
+        super.prikazi(String.format("%-35s %15s", "Uredjaj onemogucen:", s.onemogucen), s.onemogucen? "warning":"info");
         super.prikazi(String.format("%-35s %15s", "Status uredjaja:", s.status), "info");
         super.prikazi(String.format("%-35s %15s", "Ima novu vrijednost:", s.imaNovuVrijednost), "info");
         super.prikazi(String.format("%-35s %15s", "Komentar:", s.komentar), "info");

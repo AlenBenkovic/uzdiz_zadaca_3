@@ -26,7 +26,7 @@ public class MjestoView extends MainView {
         super.prikazi("", "info");
         super.prikazi(String.format("%-35s", "Popis pridruzenih uredjaja:"), "info");
         for (Uredjaj u : m.getUredjaji()) {
-            super.prikazi(String.format("%-35s %15s", u.naziv, u.id), "info");
+            super.prikazi(String.format("%-35s %15s", u.naziv, u.id), u.onemogucen? "warning": "info");
         }
     }
 

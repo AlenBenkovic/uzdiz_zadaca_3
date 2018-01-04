@@ -5,6 +5,8 @@
  */
 package uzdiz_zadaca_3.mvc;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -30,6 +32,7 @@ public class MainController {
 
     private FoiZgrada zgrada;
     private final MainView view;
+    private ByteArrayOutputStream storage = new ByteArrayOutputStream();
 
     public MainController(FoiZgrada zgrada, MainView view) {
         this.zgrada = zgrada;
@@ -122,11 +125,13 @@ public class MainController {
 
                 ObjectOutputStream oos;
                 try {
-                    oos = new ObjectOutputStream(
+                    ObjectOutputStream out = new ObjectOutputStream(storage);
+                    out.writeObject(zgrada);
+                    /*oos = new ObjectOutputStream(
                             new FileOutputStream(new File("zgrada.foi")));
                     oos.writeObject(zgrada);
                     oos.flush();
-                    oos.close();
+                    oos.close();*/
                     view.prikazi("Podaci uspjesno spremljeni.", "info");
 
                 } catch (IOException ex) {
@@ -136,12 +141,20 @@ public class MainController {
             } else if (in.equals("VP")) {
 
                 try {
-                    FileInputStream fileIn;
+                    if (storage.size() == 0) {
+                        view.prikazi("Ne postoje spremljeni podaci!", "warning");
+                    } else {
+                        ByteArrayInputStream bis = new ByteArrayInputStream(storage.toByteArray());
+                        ObjectInputStream input = new ObjectInputStream(bis);
+                        this.zgrada = (FoiZgrada) input.readObject();
+                        view.prikazi("Podaci su uspjesno ucitani.", "info");
+                    }
+
+                    /*FileInputStream fileIn;
                     fileIn = new FileInputStream("zgrada.foi");
                     ObjectInputStream input = new ObjectInputStream(fileIn);
-                    this.zgrada = (FoiZgrada) input.readObject();
-                    view.prikazi("Podaci su uspjesno ucitani.", "info");
-                } catch (FileNotFoundException ex) {
+                    this.zgrada = (FoiZgrada) input.readObject();*/
+                } catch (FileNotFoundException | NullPointerException ex) {
                     view.prikazi("Ne postoje spremljeni podaci!", "warning");
                 } catch (ClassNotFoundException | IOException ex) {
                     view.prikazi("Greska prilikom ucitavanja podataka: " + ex.toString(), "warning");
