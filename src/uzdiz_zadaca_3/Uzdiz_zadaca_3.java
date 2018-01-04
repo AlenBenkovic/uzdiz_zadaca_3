@@ -31,6 +31,7 @@ public class Uzdiz_zadaca_3 {
             tof.pokreniProgram();
             
         } else {
+            MainView.cleanScreen();
             MainView.prikazi("Parametri nisu ispravni!", "warning");
             System.exit(0);
         }

@@ -6,6 +6,7 @@
 package uzdiz_zadaca_3.composite;
 
 import java.io.Serializable;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import uzdiz_zadaca_3.chain.MjestoHandler;
@@ -45,8 +46,9 @@ public class Mjesto extends MjestoHandler implements Foi, Serializable {
         if (tipMjesta == this.tip) {
             for (Uredjaj u : this.uredjaji) {
                 if (u instanceof Senzor) {
-                    if (((Senzor) u).naziv.contains("temperatura")) {
-                        MainView.prikazi(String.format("%-35s %15s", "Trenutna temperatura u Varaždinu je:", ((Senzor) u).vrijednost), "title2");
+                    if (((Senzor) u).naziv.contains("temperatura") && !((Senzor) u).onemogucen) {
+                        DecimalFormat df = new DecimalFormat(".##");
+                        MainView.prikazi(String.format("%-35s %15s", "Trenutna temperatura u Varaždinu je:", df.format(((Senzor) u).vrijednost) + "°C"), "title2");
                     }
                 }
             }
