@@ -6,7 +6,6 @@
 package uzdiz_zadaca_3;
 
 import uzdiz_zadaca_3.builder.ToF;
-import uzdiz_zadaca_3.mvc.MainView;
 import uzdiz_zadaca_3.utils.Params;
 
 /**
@@ -19,7 +18,7 @@ public class Uzdiz_zadaca_3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        if (Params.checkArgs(args)) {
+        if (args.length>0 && Params.checkArgs(args)) {
             ToF tof = new ToF.Builder()
                     // sucelje se inicijalizira odmah kod kreiranja buildera
                     .kreirajMjesta()
@@ -31,8 +30,7 @@ public class Uzdiz_zadaca_3 {
             tof.pokreniProgram();
             
         } else {
-            MainView.cleanScreen();
-            MainView.prikazi("Parametri nisu ispravni!", "warning");
+            System.err.println("Parametri nisu ispravni!");
             System.exit(0);
         }
     }
